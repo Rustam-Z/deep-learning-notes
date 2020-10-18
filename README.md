@@ -10,3 +10,10 @@ You will learn about Convolutional networks, RNNs, LSTM, Adam, Dropout, BatchNor
 - Course 3 *Structuring Machine Learning Projects* - how to build a successful machine learning projects, and how to prioritize the problem
 - Course 4 *Convolutional Neural Networks* - all about CNN
 - Course 5 *Sequence Models* - Recurrent Neural Networks (RNNs), natural language processing (NLP)
+
+## Course 1 - Neural Networks and Deep Learning
+You will: 
+- Understand the major technology trends driving Deep Learning
+- Be able to build, train and apply fully connected deep neural networks 
+- Know how to implement efficient (vectorized) neural networks 
+- Understand the key parameters in a neural network's architecture 
