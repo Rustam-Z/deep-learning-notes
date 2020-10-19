@@ -21,4 +21,18 @@ You will:
 - Understand the key parameters in a neural network's architecture 
 
 ## C1 Week 1
+- **Machine Learning vs Deep Learning**
 ![MLvsDL](media/MLvsDL.png)
+
+- **What is neural network?** It is a powerful learning algorithm inspired by how the brain works.
+![](media/what-is-neural-networks.png)
+
+- **Supervised Learning for Neural Networks**   
+  - Supervised learning problems are categorized into "regression" and "classification" problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.  
+  - Application of supervised learning
+  ![](media/applications-of-supervised-learning.png)
+  - Types of neural networks: *Convolution Neural Network (CNN)* used often for image application and *Recurrent Neural Network (RNN)* used for one-dimensional sequence data such as translating English to Chinses. As for the autonomous driving, it is a hybrid neural network architecture.
+  - Structured vs unstructured data
+  ![](media/structured-and-unstructured-data.png)
+
+  
