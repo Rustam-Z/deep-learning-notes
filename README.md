@@ -29,10 +29,13 @@ You will:
 
 - **Supervised Learning for Neural Networks**   
   - Supervised learning problems are categorized into "regression" and "classification" problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.  
-  - Application of supervised learning
+  - **Application of supervised learning**
   ![](media/applications-of-supervised-learning.png)
-  - Types of neural networks: *Convolution Neural Network (CNN)* used often for image application and *Recurrent Neural Network (RNN)* used for one-dimensional sequence data such as translating English to Chinses. As for the autonomous driving, it is a hybrid neural network architecture.
-  - Structured vs unstructured data
+  - Types of neural networks: **Convolution Neural Network (CNN)** used often for image application and **Recurrent Neural Network (RNN)** used for one-dimensional sequence data such as translating English to Chinses. As for the autonomous driving, it is a hybrid neural network architecture.
+  - **Structured vs unstructured data**
   ![](media/structured-and-unstructured-data.png)
+  - **Why is Deep Learning taking off?** Large amount of data! We see that traditional algorithms reach to a threshold on performance. However, NN always works better with more data. So you can get better performance as long as you collecting more and more data, without changing the algorithm itself.
+  ![](media/dl-taking-off.jpeg)
+
 
   
