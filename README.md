@@ -24,7 +24,7 @@ Source: [coursera.org](https://www.coursera.org/specializations/deep-learning)
 <img src="media/MLvsDL.png" width=300>
 
 - **What is neural network?** [Lecture notes](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/01.%20What_is_Neural_Network.pdf)
-<img src="media/what-is-neural-networks.png" width=300><br>
+<img src="media/what-is-nn.png" width=300><br>
 NN is a powerful learning algorithm inspired by how the brain works.
 
 - **Supervised Learning for Neural Networks** [Lecture notes](https://github.com/Rustam-Z/deep-learning/blob/mainCourse%201%20Neural%20Networks%20and%20Deep%20Learning/02.%20Supervised_Learning_for_Neural_Network.pdf)
