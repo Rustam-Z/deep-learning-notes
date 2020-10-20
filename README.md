@@ -23,14 +23,13 @@ Source: [coursera.org](https://www.coursera.org/specializations/deep-learning)
 - **Machine Learning vs Deep Learning**
 <img src="media/MLvsDL.png" width=300>
 
-- **What is neural network?** [Lecture notes](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/01.%20What_is_Neural_Network.pdf)
-<img src="media/what-is-nn.png" width=300><br>
-NN is a powerful learning algorithm inspired by how the brain works.
+- **What is neural network?** [(Lecture notes)](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/01.%20What_is_Neural_Network.pdf) NN is a powerful learning algorithm inspired by how the brain works.<img src="media/what-is-nn.png" width=300>
 
-- **Supervised Learning for Neural Networks** [Lecture notes](https://github.com/Rustam-Z/deep-learning/blob/mainCourse%201%20Neural%20Networks%20and%20Deep%20Learning/02.%20Supervised_Learning_for_Neural_Network.pdf)
+
+- **Supervised Learning for Neural Networks** [(Lecture notes)](https://github.com/Rustam-Z/deep-learning/blob/mainCourse%201%20Neural%20Networks%20and%20Deep%20Learning/02.%20Supervised_Learning_for_Neural_Network.pdf)
   - Supervised - regression and classification problems. Regression problem - predict results within a continuous output, trying to map input variables to some continuous function. Classification problem, we are instead trying to predict results in a discrete output, we are trying to map input variables into discrete categories.  
   - **Application of supervised learning**
-  <img src="media/supervised-learning.png" width=300>
+    <img src="media/supervised-learning.png" width=300>
   - Types of neural networks: **Convolution Neural Network (CNN)** used often for image application and **Recurrent Neural Network (RNN)** used for one-dimensional sequence data such as translating English to Chinses. As for the autonomous driving, it is a hybrid neural network architecture.
   - **Structured vs unstructured data**
     <img src="media/structured-and-unstructured-data.png" width=300>
