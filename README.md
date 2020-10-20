@@ -24,10 +24,10 @@ Source: [coursera.org](https://www.coursera.org/specializations/deep-learning)
 - Machine Learning vs Deep Learning
 <br><img src="media/MLvsDL.png" width=300>
 
-- **What is neural network?** [(Lecture notes)](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/01.%20What_is_Neural_Network.pdf) NN is a powerful learning algorithm inspired by how the brain works. 
+- **What is neural network?** [(Lecture notes)](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/01_What_is_Neural_Network.pdf) NN is a powerful learning algorithm inspired by how the brain works. 
 <br><img src="media/what-is-nn.png" width=300>
 
-- **Supervised Learning for Neural Networks** [(Lecture notes)](https://github.com/Rustam-Z/deep-learning/blob/mainCourse%201%20Neural%20Networks%20and%20Deep%20Learning/02.%20Supervised_Learning_for_Neural_Network.pdf)
+- **Supervised Learning for Neural Networks** [(Lecture notes)](https://github.com/Rustam-Z/deep-learning/blob/mainCourse%201%20Neural%20Networks%20and%20Deep%20Learning/02_Supervised_Learning_for_Neural_Network.pdf)
 
   - Supervised - regression and classification problems. Regression problem - predict results within a continuous output, trying to map input variables to some continuous function. Classification problem, we are instead trying to predict results in a discrete output, we are trying to map input variables into discrete categories.  
 
@@ -39,7 +39,7 @@ Source: [coursera.org](https://www.coursera.org/specializations/deep-learning)
   - Structured vs unstructured data
     <br><img src="media/structured-and-unstructured-data.png" width=300>
 
-- **Why is Deep Learning taking off?** [(Lecture notes)](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/03.%20Why_is_Deep_Learning_Taking_Off.pdf) 
+- **Why is Deep Learning taking off?** [(Lecture notes)](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/03_Why_is_Deep_Learning_Taking_Off.pdf) 
 Large amount of data! We see that traditional algorithms reach to a threshold on performance. However, NN always works better with more data. So you can get better performance as long as you collecting more and more data, without changing the algorithm itself.
 <br><img src="media/dl-taking-off.jpeg" width=300>
 
@@ -50,6 +50,7 @@ Large amount of data! We see that traditional algorithms reach to a threshold on
 - Python, NumPy, implement vectorization
 
 ### Logistic Regression as a Neural Network
-- **Binary Classification**
+- **Binary Classification** [(Lecture notes)](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/04_Binary_Classification.pdf) 
+- **Logistic Regression** Predict whether 0 or 1, [(Lecture notes)](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/05_Logistic_Regression.pdf), [YouTube Video Part 1](https://www.youtube.com/watch?v=L_xBe7MbPwk), [Part 2](https://www.youtube.com/watch?v=uFfsSgQgerw)
 
   
