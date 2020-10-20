@@ -14,7 +14,6 @@ You will learn about Convolutional networks, RNNs, LSTM, Adam, Dropout, BatchNor
 Source: [coursera.org](https://www.coursera.org/specializations/deep-learning)
 
 # Course 1 - Neural Networks and Deep Learning
-You will: 
 - Understand the major technology trends driving Deep Learning
 - Be able to build, train and apply fully connected deep neural networks 
 - Know how to implement efficient (vectorized) neural networks 
@@ -22,22 +21,23 @@ You will:
 
 ## C1 Week 1
 - **Machine Learning vs Deep Learning**
-![MLvsDL](media/MLvsDL.png)
+<img src="media/MLvsDL.png" width=300>
 
 - **What is neural network?** [Lecture notes](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/01.%20What_is_Neural_Network.pdf)
+<img src="media/what-is-neural-networks.png" width=300><br>
 NN is a powerful learning algorithm inspired by how the brain works.
-![](media/what-is-neural-networks.png)
 
-- **Supervised Learning for Neural Networks** [Lecture notes](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/02.%20Supervised_Learning_for_Neural_Network.pdf)
-  - Supervised learning problems are categorized into "regression" and "classification" problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.  
+- **Supervised Learning for Neural Networks** [Lecture notes](https://github.com/Rustam-Z/deep-learning/blob/mainCourse%201%20Neural%20Networks%20and%20Deep%20Learning/02.%20Supervised_Learning_for_Neural_Network.pdf)
+  - Supervised - regression and classification problems. Regression problem - predict results within a continuous output, trying to map input variables to some continuous function. Classification problem, we are instead trying to predict results in a discrete output, we are trying to map input variables into discrete categories.  
   - **Application of supervised learning**
-  ![](media/applications-of-supervised-learning.png)
+  <img src="media/supervised-learning.png" width=300>
   - Types of neural networks: **Convolution Neural Network (CNN)** used often for image application and **Recurrent Neural Network (RNN)** used for one-dimensional sequence data such as translating English to Chinses. As for the autonomous driving, it is a hybrid neural network architecture.
   - **Structured vs unstructured data**
-  ![](media/structured-and-unstructured-data.png)
+    <img src="media/structured-and-unstructured-data.png" width=300>
+
 - **Why is Deep Learning taking off?** [Lecture notes](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/03.%20Why_is_Deep_Learning_Taking_Off.pdf) 
 Large amount of data! We see that traditional algorithms reach to a threshold on performance. However, NN always works better with more data. So you can get better performance as long as you collecting more and more data, without changing the algorithm itself.
-  ![](media/dl-taking-off.jpeg)
+<img src="media/dl-taking-off.jpeg" width=300>
 
 ## C1 Week 2
 
