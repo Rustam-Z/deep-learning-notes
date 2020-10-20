@@ -28,13 +28,16 @@ Source: [coursera.org](https://www.coursera.org/specializations/deep-learning)
 
 - **Supervised Learning for Neural Networks** [(Lecture notes)](https://github.com/Rustam-Z/deep-learning/blob/mainCourse%201%20Neural%20Networks%20and%20Deep%20Learning/02.%20Supervised_Learning_for_Neural_Network.pdf)
   - Supervised - regression and classification problems. Regression problem - predict results within a continuous output, trying to map input variables to some continuous function. Classification problem, we are instead trying to predict results in a discrete output, we are trying to map input variables into discrete categories.  
+
   - **Application of supervised learning**
     <img src="media/supervised-learning.png" width=300>
+
   - Types of neural networks: **Convolution Neural Network (CNN)** used often for image application and **Recurrent Neural Network (RNN)** used for one-dimensional sequence data such as translating English to Chinses. As for the autonomous driving, it is a hybrid neural network architecture.
+
   - **Structured vs unstructured data**
     <img src="media/structured-and-unstructured-data.png" width=300>
 
-- **Why is Deep Learning taking off?** [Lecture notes](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/03.%20Why_is_Deep_Learning_Taking_Off.pdf) 
+- **Why is Deep Learning taking off?** [(Lecture notes)](https://github.com/Rustam-Z/deep-learning/blob/main/Course%201%20Neural%20Networks%20and%20Deep%20Learning/03.%20Why_is_Deep_Learning_Taking_Off.pdf) 
 Large amount of data! We see that traditional algorithms reach to a threshold on performance. However, NN always works better with more data. So you can get better performance as long as you collecting more and more data, without changing the algorithm itself.
 <img src="media/dl-taking-off.jpeg" width=300>
 
