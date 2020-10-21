@@ -9,11 +9,11 @@ In five courses, you will learn the foundations of Deep Learning, understand how
 Source: [coursera.org](https://www.coursera.org/specializations/deep-learning)
 
 ## Courses
-- Course 1 *Neural Networks and Deep Learning* - just a start, architecture of NN
-- Course 2 *Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization* - TensorFlow, optomization algos
-- Course 3 *Structuring Machine Learning Projects* - how to build a successful machine learning projects, and how to prioritize the problem
-- Course 4 *Convolutional Neural Networks* - all about CNN
-- Course 5 *Natural Language Processing: Building sequence models* - Recurrent Neural Networks (RNNs), natural language processing (NLP)
+1. *Neural Networks and Deep Learning* - just a start, architecture of NN
+2. *Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization* - TensorFlow, optomization algos
+3. *Structuring Machine Learning Projects* - how to build a successful machine learning projects, and how to prioritize the problem
+4. *Convolutional Neural Networks* - all about CNN
+5. *Natural Language Processing: Building sequence models* - Recurrent Neural Networks (RNNs), natural language processing (NLP)
 
 ## Similar Notes
 - Beautifully drawn notes 
