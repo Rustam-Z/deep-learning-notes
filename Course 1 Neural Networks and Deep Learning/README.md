@@ -84,3 +84,86 @@
 - Back prop for computing the derivatives
 - <img src="media/03.png" width=300>
 
+### Logistic Regression Gradient Descent
+- In the video were discussed the derivatives of gradient decent for a **single training example** with two features `x1` and `x2`.
+- <img src="media/04.png" width=300>
+
+### Gradient Descent on *m* Examples
+- Lets say we have these variables:
+  ```
+  	X1                  Feature
+  	X2                  Feature
+  	W1                  Weight of the first feature.
+  	W2                  Weight of the second feature.
+  	B                   Logistic Regression parameter.
+  	M                   Number of training examples
+  	Y(i)                Expected output of i
+  ```
+- So we have:
+  <img src="media/09.png">
+
+- Then from right to left we will calculate derivations compared to the result:
+
+  ```
+  	d(a)  = d(l)/d(a) = -(y/a) + ((1-y)/(1-a))
+  	d(z)  = d(l)/d(z) = a - y
+  	d(W1) = X1 * d(z)
+  	d(W2) = X2 * d(z)
+  	d(B)  = d(z)
+  ```
+
+- From the above we can conclude the logistic regression pseudo code:
+
+  ```
+  	J = 0; dw1 = 0; dw2 =0; db = 0;         # Devs.
+  	w1 = 0; w2 = 0; b=0;					# Weights
+  	for i = 1 to m
+  		# Forward pass
+  		z(i) = W1*x1(i) + W2*x2(i) + b
+  		a(i) = Sigmoid(z(i))
+  		J += (Y(i)*log(a(i)) + (1-Y(i))*log(1-a(i)))
+
+  		# Backward pass
+  		dz(i) = a(i) - Y(i)
+  		dw1 += dz(i) * x1(i)
+  		dw2 += dz(i) * x2(i)
+  		db  += dz(i)
+  	J /= m
+  	dw1/= m
+  	dw2/= m
+  	db/= m
+
+  	# Gradient descent
+  	w1 = w1 - alpha * dw1
+  	w2 = w2 - alpha * dw2
+  	b = b - alpha * db
+  ```
+
+- The above code should run for some iterations to minimize error.
+
+- So there will be two inner loops to implement the logistic regression.
+
+- Vectorization is so important on deep learning to reduce loops. In the last code we can make the whole loop in one step using vectorization!
+
+### Vectorization
+- `for-loops` are slow. Thats why we need vectorization to get rid of some of our for loops.
+- `a=random.rand(1000000) b=random.rand(1000000)` - NumPy library `numpy.dot(a, b)` function is using vectorization by default.
+- The vectorization can be done on CPU or GPU thought the SIMD operation. But its faster on GPU.
+- Whenever possible, avoid for-loops.
+- Most of the NumPy library methods are vectorized version.
+
+### Vectorizing Logistic Regression
+- As an input we have a matrix `X` and its `[Nx, m]` and a matrix `Y` and its `[Ny, m]`.
+- We will then compute at instance `[z1,z2...zm] = W' * X + [b,b,...b]`. This can be written in python as:
+```python
+  Z = np.dot(W.T,X) + b    # Vectorization, then broadcasting, Z shape is (1, m)
+  A = 1 / 1 + np.exp(-Z)   # Vectorization, A shape is (1, m)
+``` 
+- Vectorizing Logistic Regression's Gradient Output
+``` python
+  dz = A - Y                  # Vectorization, dz shape is (1, m)
+  dw = np.dot(X, dz.T) / m    # Vectorization, dw shape is (Nx, 1)
+  db = dz.sum() / m           # Vectorization, dz shape is (1, 1)
+```
+- <img src="media/06.png" width=300> <img src="media/05.png" width=300>
+
