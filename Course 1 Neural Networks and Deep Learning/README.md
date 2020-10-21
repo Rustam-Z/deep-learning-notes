@@ -44,11 +44,13 @@
 ### Logistic Regression
 - [Lecture notes](05_Logistic_Regression.pdf), [YouTube Video Part 1](https://www.youtube.com/watch?v=L_xBe7MbPwk) & [Part 2](https://www.youtube.com/watch?v=uFfsSgQgerw)
 - Predict whether `0 or 1`, classification algorithm of 2 classes
-- `y` to be in between 0 and 1 (probability): y = sigmoid(w<sup>T</sup>x + b)
+- `y` to be in between `0 and 1` (probability): `y = sigmoid(w^T*x + b)`
 - <img src="media/sigmoid.png" width=200>
 
 ### Logistic Regression Cost Function
 - [Lecture notes](), [YouTube Video](https://www.youtube.com/watch?v=MztgenIfGgM)
+- The cost function measures the accuracy of our hypothesis function. Quantifies the error between predicted values and expected values. 
+- Now we are able to concretely measure the accuracy of our predictor function (hypothesis) against the correct results we have so that we can predict new results we don't have.
 - First loss function would be the square root error:` L(y',y) = 1/2 (y' - y)^2`
   - But we won't use this notation because it leads us to optimization problem which is non convex, means it contains local optimum points.
 - This is the function that we will use: `L(y',y) = - (y*log(y') + (1-y)*log(1-y'))`
@@ -59,3 +61,26 @@
 - The loss function computes the error for a single training example; the cost function is the average of the loss functions of the entire training set.
 
 ### Gradient Descent
+- *Gradient Descent* - so we have our hypothesis function and we have a way of measuring how well it fits into the data. Now we need to estimate the parameters in the hypothesis function. That's where gradient descent comes in.
+- [YouTube video: What is the Gradient Descent?](https://www.youtube.com/watch?v=gzrQvzYEvYc)
+- Gradient Descent basically just does what we were doing by hand — change the theta values, or parameters, bit by bit, until we hopefully arrived at a minimum. I am comparing it with a cost function right now. 
+- We want to predict `w` and `b` that minimize the cost function.
+- First we initialize `w` and `b` to 0, 0 or initialize them to a random value in the convex function and then try to improve the values the reach minimum value.
+- The derivative give us the direction to improve our parameters.
+- The actual equations we will implement:
+  - `w = w - alpha * d(J(w,b) / dw)` (how much the function slopes in the w direction)
+  - `b = b - alpha * d(J(w,b) / db)` (how much the function slopes in the d direction)
+  - <img src="media/gradient1.png" width=300> <img src="media/gradient2.png" width=300> 
+
+### Derivatives
+- Derivative of a linear line is its slope.
+  - ex. `f(a) = 3a` `d(f(a))/d(a) = 3`
+  - if `a = 2` then `f(a) = 6`
+  - if we move a a little bit `a = 2.001` then `f(a) = 6.003` means that we multiplied the derivative (Slope) to the moved area and added it to the last result.
+- To conclude, Derivative is the slope, and this slope is different in different points in the function thats why the derivative is a function.
+
+### Derivatives with a Computation Graph
+- Calculus chain rule says: If `x -> y -> z` (x effect y and y effects z) Then `d(z)/d(x) = d(z)/d(y) * d(y)/d(x)`
+- Back prop for computing the derivatives
+- <img src="media/03.png" width=300>
+
