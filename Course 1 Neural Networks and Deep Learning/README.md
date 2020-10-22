@@ -175,12 +175,12 @@
 	- Don't hesitate to use assert(a.shape == (5,1)) to check if your matrix shape is the required one.
 	- If you've found a rank one matrix try to run reshape on it.
 	```python
-		a = np.random.randn(5)    # Rank 1 array (DON'T USE)
-		assert(a.shape == (5, 1)) # checking the codition, if false AssertionError will be raised
-		a = a.reshape((5, 1))     # Will change to vector
-		b = np.random.randn(5, 1) # Column vector
-		c = np.random.randn(1, 5) # Row vector
-		c.shape 				  # Will output a shape (1, 5)
+	a = np.random.randn(5)    # Rank 1 array (DON'T USE)
+	assert(a.shape == (5, 1)) # checking the codition, if false AssertionError will be raised
+	a = a.reshape((5, 1))     # Will change to vector
+	b = np.random.randn(5, 1) # Column vector
+	c = np.random.randn(1, 5) # Row vector
+	c.shape 				  # Will output a shape (1, 5)
 	```
 - In NumPy, `obj.sum(axis = 0)` sums the columns while `obj.sum(axis = 1)` sums the rows.
 - In NumPy, `obj.reshape(1,4)` changes the shape of the matrix by broadcasting the values.	
@@ -189,12 +189,12 @@
 - In general principle of broadcasting. If you have an (m,n) matrix and you add(+) or subtract(-) or multiply(*) or divide(/) with a (1,n) matrix, then this will copy it m times into an (m,n) matrix (in case of sum). The same with if you use those operations with a (m , 1) matrix, then this will copy it n times into (m, n) matrix. And then apply the addition, subtraction, and multiplication of division element wise.
 - To Compute the derivative of `Sigmoid`:
 	```
-		s = sigmoid(x)
-		ds = s * (1 - s)       # Derivative  using calculus
+	s = sigmoid(x)
+	ds = s * (1 - s)       # Derivative  using calculus
 	```
 - To make an image of `(width,height,depth)` be a vector, use this:
 	```
-		v = image.reshape(image.shape[0]*image.shape[1]*image.shape[2],1)  #reshapes the image.
+	v = image.reshape(image.shape[0]*image.shape[1]*image.shape[2], 1)  #reshapes the image.
 	```
 - Gradient descent converges faster after normalization of the input matrices.
 
@@ -209,3 +209,4 @@
 - Preprocessing the dataset is important.
 - Tuning the learning rate (which is an example of a "hyperparameter") can make a big difference to the algorithm.
 - kaggle.com is a good place for datasets and competitions.
+
