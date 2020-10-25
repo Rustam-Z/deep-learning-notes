@@ -9,24 +9,24 @@
 
 ### Machine Learning vs Deep Learning
 - ANN (artificial neural networks), CNN, RNN
-- <img src="media/MLvsDL.png" width=300>
+- <img src="media/MLvsDL.png" width=400>
 
 ### What is neural network? 
 - [Lecture notes](notes/01_What_is_Neural_Network.pdf) 
 - NN is a powerful learning algorithm inspired by how the brain works. 
-- <img src="media/what-is-nn.png" width=300>
+- <img src="media/what-is-nn.png" width=400>
 
 ### Supervised Learning for Neural Networks
 - [Lecture notes](notes/02_Supervised_Learning_for_Neural_Network.pdf)
 - Supervised - regression and classification problems. Regression problem - predict results within a continuous output, trying to map input variables to some continuous function. Classification problem, we are instead trying to predict results in a discrete output, we are trying to map input variables into discrete categories.  
-- Application of supervised learning <br><img src="media/supervised-learning.png" width=300>
+- Application of supervised learning <br><img src="media/supervised-learning.png" width=400>
 - Types of neural networks: **Convolution Neural Network (CNN)** used often for image application and **Recurrent Neural Network (RNN)** used for one-dimensional sequence data such as translating English to Chinses. As for the autonomous driving, it is a hybrid neural network architecture.
-- Structured vs unstructured data <br><img src="media/structured-and-unstructured-data.png" width=300>
+- Structured vs unstructured data <br><img src="media/structured-and-unstructured-data.png" width=400>
 
 ### Why is Deep Learning taking off?
 - [Lecture notes](notes/03_Why_is_Deep_Learning_Taking_Off.pdf) 
 - Large amount of data! We see that traditional algorithms reach to a threshold on performance. However, NN always works better with more data. So you can get better performance as long as you collecting more and more data, without changing the algorithm itself.
-- <img src="media/dl-taking-off.jpeg" width=300>
+- <img src="media/dl-taking-off.jpeg" width=400>
 
 
 ## Neural Networks Basics
@@ -46,7 +46,7 @@
 - [Lecture notes](notes/05_Logistic_Regression.pdf), [YouTube Video Part 1](https://www.youtube.com/watch?v=L_xBe7MbPwk) & [Part 2](https://www.youtube.com/watch?v=uFfsSgQgerw)
 - Predict whether `0 or 1`, classification algorithm of 2 classes
 - `y` to be in between `0 and 1` (probability): `y = sigmoid(w^T*x + b)`
-- <img src="media/sigmoid.png" width=200>
+- <img src="media/sigmoid.png" width=300>
 
 ### Logistic Regression Cost Function
 - [Lecture notes](notes/06_Logistic_Regression_Cost_Function.pdf), [YouTube Video](https://www.youtube.com/watch?v=MztgenIfGgM)
@@ -71,7 +71,7 @@
 - The actual equations we will implement:
   - `w = w - alpha * d(J(w,b) / dw)` (how much the function slopes in the w direction)
   - `b = b - alpha * d(J(w,b) / db)` (how much the function slopes in the d direction)
-  - <img src="media/gradient1.png" width=300> <img src="media/gradient2.png" width=300> 
+  - <img src="media/gradient1.png" width=400> <img src="media/gradient2.png" width=400> 
 
 ### Derivatives
 - Derivative of a linear line is its slope.
@@ -83,11 +83,11 @@
 ### Derivatives with a Computation Graph
 - Calculus chain rule says: If `x -> y -> z` (x effect y and y effects z) Then `d(z)/d(x) = d(z)/d(y) * d(y)/d(x)`
 - Back prop for computing the derivatives
-- <img src="media/03.png" width=300>
+- <img src="media/03.png" width=400>
 
 ### Logistic Regression Gradient Descent
 - In the video were discussed the derivatives of gradient decent for a **single training example** with two features `x1` and `x2`.
-- <img src="media/04.png" width=300>
+- <img src="media/04.png" width=400>
 
 ### Gradient Descent on *m* Examples
 - Lets say we have these variables:
@@ -166,7 +166,7 @@
   dw = np.dot(X, dz.T) / m    # Vectorization, dw shape is (Nx, 1)
   db = dz.sum() / m           # Vectorization, dz shape is (1, 1)
 ```
-- <img src="media/06.png" width=300> <img src="media/05.png" width=300>
+- <img src="media/06.png" width=400> <img src="media/05.png" width=400>
 
 ### Notes on Python and NumPy
 
@@ -224,7 +224,7 @@
   X2   ==>  z = XW + B ==> a = Sigmoid(z) ==> L(a,Y)
   X3  /
   ```
-    - <img src="media/08.png" width=300>
+    - <img src="media/08.png" width=400>
 
 - In neural networks with one layer we will have:
 
@@ -233,7 +233,7 @@
   X2   =>  z1 = XW1 + B1 => a1 = Sigmoid(z1) => z2 = a1W2 + B2 => a2 = Sigmoid(z2) => L(a2,Y)
   X3  /
   ```
-    - <img src="media/08b.png" width=300>
+    - <img src="media/08b.png" width=400>
 
 - `X` is the input vector `(X1, X2, X3)`, and `Y` is the output variable `(1x1)`
 - NN is stack of logistic regression objects.
@@ -251,7 +251,7 @@
 ### Computing a Neural Network's Output
 
 - Equations of Hidden layers:
-  - <img src="media/07.png" width=300>
+  - <img src="media/07.png" width=400>
 - Here are some informations about the last image:
   - `noOfHiddenNeurons = 4`
   - `Nx = 3`
@@ -295,7 +295,7 @@
   Z2 = W2A1 + b2    # shape of Z2 is (1,m)
   A2 = sigmoid(Z2)  # shape of A2 is (1,m)
   ```
-- <img src="media/10.png" width=300> <img src="media/11.png" width=300>
+- <img src="media/10.png" width=400> <img src="media/11.png" width=400>
 
 ### What is the difference between neural network and logistic regression? 
 - Neural Network is the generalized form of logistic regression
@@ -417,7 +417,7 @@ g'(z) = { 0.01  if z < 0
   - <img src="media/08b.png" width=400>
   - <img src="media/08c.png" width=400>
   - <img src="media/08d.png" width=400> <img src="media/08e.png" width=400> 
-  - <img src="media/08f.png" width=4000>
+  - <img src="media/08f.png" width=400>
   
 ### Random Initialization
 - In logistic regression it wasn't important to initialize the weights randomly, while in NN we have to initialize them randomly.
