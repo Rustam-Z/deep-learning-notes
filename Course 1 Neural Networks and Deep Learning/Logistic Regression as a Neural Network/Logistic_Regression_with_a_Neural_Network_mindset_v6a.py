@@ -3,12 +3,10 @@ import matplotlib.pyplot as plt
 import h5py
 import scipy.misc
 from PIL import Image
-from scipy import ndimage # pip install scipy==1.1.0
 from lr_utils import load_dataset
 
 # Loading the data (cat/non-cat)
 train_set_x_orig, train_set_y, test_set_x_orig, test_set_y, classes = load_dataset()
-
 
 m_train = train_set_x_orig.shape[0]
 m_test = test_set_x_orig.shape[0]
@@ -143,6 +141,12 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
     Y_prediction_test = predict(w, b, X_test)
     Y_prediction_train = predict(w, b, X_train)
 
+    # Print train/test Errors
+    print("train accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_train - Y_train)) * 100))
+    print("test accuracy: {} %".format(100 - np.mean(np.abs(Y_prediction_test - Y_test)) * 100))
+
+
+
     d = {"costs": costs,
          "Y_prediction_test": Y_prediction_test,
          "Y_prediction_train" : Y_prediction_train,
@@ -153,14 +157,27 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
 
     return d
 
-my_image = "my_image.jpg"   # change this to the name of your image file
+d = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 2000, learning_rate = 0.005, print_cost = True)
 
 # We preprocess the image to fit your algorithm.
+# my_image = "my_image.jpg"   # change this to the name of your image file
+# fname = "images/" + my_image
+# image = np.array(ndimage.imread(fname, flatten=False))
+# image = image/255.
+# my_image = scipy.misc.imresize(image, size=(num_px,num_px)).reshape((1, num_px*num_px*3)).T
+# my_predicted_image = predict(d["w"], d["b"], my_image)
+
+my_image = "my_image4.jpg" #any image form the internet
 fname = "images/" + my_image
-image = np.array(ndimage.imread(fname, flatten=False))
-image = image/255.
-my_image = scipy.misc.imresize(image, size=(num_px,num_px)).reshape((1, num_px*num_px*3)).T
-my_predicted_image = predict(d["w"], d["b"], my_image)
+
+#Preprocessing the image
+image = Image.open(fname).resize(size=(num_px, num_px))  # use PIL to open and reshape image
+my_image = np.array(image, dtype=float) / 255  # convert to numpy array and scale values
+my_image = my_image.reshape((1, num_px*num_px*3)).T  # reshape and transpose
+
+my_predicted_image = predict(d["w"], d["b"], my_image) #predict function uses
 
 # plt.imshow(image)
 print("y = " + str(np.squeeze(my_predicted_image)) + ", your algorithm predicts a \"" + classes[int(np.squeeze(my_predicted_image)),].decode("utf-8") +  "\" picture.")
+
+# https://stackoverflow.com/questions/61989867/how-to-resize-an-image-now-that-scipy-misc-imresize-has-been-removed-from-scipy

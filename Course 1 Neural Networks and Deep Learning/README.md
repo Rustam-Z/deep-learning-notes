@@ -4,7 +4,7 @@
 - Know how to implement efficient (vectorized) neural networks 
 - Understand the key parameters in a neural network's architecture 
 
-## Introduction to Deep Learning
+## Introduction to Deep Learning: Week 1
 > Be able to explain the major trends driving the rise of deep learning, and understand where and how it is applied today.
 
 ### Machine Learning vs Deep Learning
@@ -211,7 +211,7 @@
 - Tuning the learning rate (which is an example of a "hyperparameter") can make a big difference to the algorithm.
 - kaggle.com is a good place for datasets and competitions.
 
-## Shallow neural networks
+## Shallow neural networks: Week 2
 
 > Learn to build a neural network with one hidden layer, using forward propagation and backpropagation.
 
@@ -445,3 +445,28 @@ g'(z) = { 0.01  if z < 0
       - Compute loss
       - Implement backward propagation to get the gradients
       - Update parameters (gradient descent)
+
+
+## Deep Neural Networks: Week 3
+> Understand the key computations underlying deep learning, use them to build and train deep neural networks, and apply it to computer vision. Build and train a deep L-layer Neural Network.
+
+### Deep L-layer neural network
+- Shallow NN is a NN with one (Logisic Regression) or two layers.
+- We are not coundting the input layer (features layer).
+- Deep NN is a NN with three or more layers.
+- We will use the notation `L` to denote the number of layers in a NN.
+- `n[l]` is the number of neurons in a specific layer `l`.
+- Similarly, `n[0]` denotes the number of neurons `input` layer. `n[L]` denotes the number of neurons in `output` layer.
+- `g[l]` is the activation function.
+- `a[l] = g[l](z[l])`
+- `w[l]` weights is used for `z[l]`
+- `x = a[0]`, `a[l] = y'`
+- These were the notation we will use for deep neural network.
+- So we have:
+  - A vector `n` of shape `(1, NoOfLayers+1)`
+  - A vector `g` of shape `(1, NoOfLayers)`
+  - A list of different shapes `w` based on the number of neurons on the previous and the current layer.
+  - A list of different shapes `b` based on the number of neurons on the current layer.
+
+### Forward Propagation in a Deep Network
+
