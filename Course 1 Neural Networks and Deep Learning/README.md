@@ -8,22 +8,23 @@
 > Be able to explain the major trends driving the rise of deep learning, and understand where and how it is applied today.
 
 ### Machine Learning vs Deep Learning
-- <br><img src="media/MLvsDL.png" width=300>
+- ANN (artificial neural networks), CNN, RNN
+- <img src="media/MLvsDL.png" width=300>
 
 ### What is neural network? 
-- [Lecture notes](01_What_is_Neural_Network.pdf) 
+- [Lecture notes](notes/01_What_is_Neural_Network.pdf) 
 - NN is a powerful learning algorithm inspired by how the brain works. 
 - <img src="media/what-is-nn.png" width=300>
 
 ### Supervised Learning for Neural Networks
-- [Lecture notes](02_Supervised_Learning_for_Neural_Network.pdf)
+- [Lecture notes](notes/02_Supervised_Learning_for_Neural_Network.pdf)
 - Supervised - regression and classification problems. Regression problem - predict results within a continuous output, trying to map input variables to some continuous function. Classification problem, we are instead trying to predict results in a discrete output, we are trying to map input variables into discrete categories.  
 - Application of supervised learning <br><img src="media/supervised-learning.png" width=300>
 - Types of neural networks: **Convolution Neural Network (CNN)** used often for image application and **Recurrent Neural Network (RNN)** used for one-dimensional sequence data such as translating English to Chinses. As for the autonomous driving, it is a hybrid neural network architecture.
 - Structured vs unstructured data <br><img src="media/structured-and-unstructured-data.png" width=300>
 
 ### Why is Deep Learning taking off?
-- [Lecture notes](03_Why_is_Deep_Learning_Taking_Off.pdf) 
+- [Lecture notes](notes/03_Why_is_Deep_Learning_Taking_Off.pdf) 
 - Large amount of data! We see that traditional algorithms reach to a threshold on performance. However, NN always works better with more data. So you can get better performance as long as you collecting more and more data, without changing the algorithm itself.
 - <img src="media/dl-taking-off.jpeg" width=300>
 
@@ -32,7 +33,7 @@
 > LogReg for NN, making prediction, derivative computation, and gradient descent | Compute LogReg using back prop | Python, NumPy, implement vectorization
 
 ### Binary Classification
-- [Lecture notes](04_Binary_Classification.pdf) 
+- [Lecture notes](notes/04_Binary_Classification.pdf) 
 - Here are some notations:
   - `M is the number of training vectors`
   - `Nx is the size of the input vector`
@@ -42,13 +43,13 @@
   - `X = [x(1) x(2).. x(M)]`
   - `Y = (y(1) y(2).. y(M))`
 ### Logistic Regression
-- [Lecture notes](05_Logistic_Regression.pdf), [YouTube Video Part 1](https://www.youtube.com/watch?v=L_xBe7MbPwk) & [Part 2](https://www.youtube.com/watch?v=uFfsSgQgerw)
+- [Lecture notes](notes/05_Logistic_Regression.pdf), [YouTube Video Part 1](https://www.youtube.com/watch?v=L_xBe7MbPwk) & [Part 2](https://www.youtube.com/watch?v=uFfsSgQgerw)
 - Predict whether `0 or 1`, classification algorithm of 2 classes
 - `y` to be in between `0 and 1` (probability): `y = sigmoid(w^T*x + b)`
 - <img src="media/sigmoid.png" width=200>
 
 ### Logistic Regression Cost Function
-- [Lecture notes](), [YouTube Video](https://www.youtube.com/watch?v=MztgenIfGgM)
+- [Lecture notes](notes/06_Logistic_Regression_Cost_Function.pdf), [YouTube Video](https://www.youtube.com/watch?v=MztgenIfGgM)
 - The cost function measures the accuracy of our hypothesis function. Quantifies the error between predicted values and expected values. 
 - Now we are able to concretely measure the accuracy of our predictor function (hypothesis) against the correct results we have so that we can predict new results we don't have.
 - First loss function would be the square root error:` L(y',y) = 1/2 (y' - y)^2`
@@ -220,18 +221,19 @@
 
   ```
   X1  \  
-  X2   ==>  z = XW + B ==> a = Sigmoid(z) ==> l(a,Y)
+  X2   ==>  z = XW + B ==> a = Sigmoid(z) ==> L(a,Y)
   X3  /
   ```
+    - <img src="media/08.png" width=300>
 
 - In neural networks with one layer we will have:
 
   ```
   X1  \  
-  X2   =>  z1 = XW1 + B1 => a1 = Sigmoid(z1) => z2 = a1W2 + B2 => a2 = Sigmoid(z2) => l(a2,Y)
+  X2   =>  z1 = XW1 + B1 => a1 = Sigmoid(z1) => z2 = a1W2 + B2 => a2 = Sigmoid(z2) => L(a2,Y)
   X3  /
   ```
-
+    - <img src="media/08b.png" width=300>
 
 - `X` is the input vector `(X1, X2, X3)`, and `Y` is the output variable `(1x1)`
 - NN is stack of logistic regression objects.
@@ -294,3 +296,152 @@
   A2 = sigmoid(Z2)  # shape of A2 is (1,m)
   ```
 - <img src="media/10.png" width=300> <img src="media/11.png" width=300>
+
+### What is the difference between neural network and logistic regression? 
+- Neural Network is the generalized form of logistic regression
+- https://www.quora.com/What-is-the-difference-between-neural-network-and-logistic-regression
+- Look at backprob intuition below 
+
+### Activation fanction
+- So far we are using sigmoid, but in some cases other functions can be a lot better.
+
+- Sigmoid can lead us to gradient decent problem where the updates are so low.
+
+- Sigmoid activation function range is `[0,1] A = 1 / (1 + np.exp(-z))` # Where z is the input matrix
+
+- `Tanh` activation function range is `[-1,1]` (Shifted version of sigmoid function)
+  - n NumPy we can implement Tanh using one of these methods: `A = (np.exp(z) - np.exp(-z)) / (np.exp(z) + np.exp(-z)) # Where z is the input matrix`
+
+  - Or `A = np.tanh(z) # Where z is the input matrix`
+
+- It turns out that the `tanh` activation usually works better than `sigmoid` activation function for hidden units because the mean of its output is closer to zero, and so it centers the data better for the next layer.
+
+- `Sigmoid` or `Tanh` function disadvantage is that if the input is too small or too high, the slope will be near zero which will cause us the gradient decent problem.
+
+- One of the popular activation functions that solved the slow gradient decent is the RELU function. `RELU = max(0,z) # so if z is negative the slope is 0 and if z is positive the slope remains linear.`
+
+- So here is some basic rule for choosing activation functions, if your classification is between 0 and 1, use the output activation as sigmoid and the others as `RELU`.
+
+- `Leaky RELU `activation function different of RELU is that if the input is negative the slope will be so small. It works as RELU but most people uses RELU. `Leaky_RELU = max(0.01z,z) #the 0.01 can be a parameter for your algorithm.`
+
+- In NN you will decide a lot of choices like:
+  - No. of hidden layers.
+  - No. of neurons in each hidden layer.
+  - Learning rate. (The most important parameter)
+  - Activation functions.
+  - And others..
+
+- It turns out there are no guide lines for that. You should try all activation functions for example.
+
+### Why do you need non-linear activation functions?
+- If we removed the activation function from our algorithm that can be called linear activation function.
+- Linear activation function will output linear activations
+  - Whatever hidden layers you add, the activation will be always linear like logistic regression (So its useless in a lot of complex problems)
+- You might use linear activation function in one place - in the output layer if the output is real numbers (regression problem). But even in this case if the output value is non-negative you could use RELU instead.
+
+### Derivatives of activation functions
+- Derivation of Sigmoid activation function:
+```
+g(z)  = 1 / (1 + np.exp(-z))
+g'(z) = (1 / (1 + np.exp(-z))) * (1 - (1 / (1 + np.exp(-z))))
+g'(z) = g(z) * (1 - g(z))
+```
+
+- Derivation of Tanh activation function:
+```
+g(z)  = (e^z - e^-z) / (e^z + e^-z)
+g'(z) = 1 - np.tanh(z)^2 = 1 - g(z)^2
+```
+- Derivation of RELU activation function:
+```
+g(z)  = np.maximum(0,z)
+g'(z) = { 0  if z < 0
+          1  if z >= 0  }
+```
+- Derivation of leaky RELU activation function:
+```
+g(z)  = np.maximum(0.01 * z, z)
+g'(z) = { 0.01  if z < 0
+          1     if z >= 0 }                
+```
+
+### Gradient descent for Neural Networks
+- Gradient descent algorithm:
+
+  - NN parameters:
+    ```  n[0] = Nx
+      n[1] = NoOfHiddenNeurons
+      n[2] = NoOfOutputNeurons = 1
+      W1 shape is (n[1],n[0])
+      b1 shape is (n[1],1)
+      W2 shape is (n[2],n[1])
+      b2 shape is (n[2],1)
+      Cost function I = I(W1, b1, W2, b2) = (1/m) * Sum(L(Y,A2))
+    ```
+  - Cost function `I = I(W1, b1, W2, b2) = (1/m) * Sum(L(Y,A2))`
+  - Then Gradient descent:
+    ```
+      Repeat:
+            Compute predictions (y'[i], i = 0,...m)
+            Get derivatives: dW1, db1, dW2, db2
+            Update: W1 = W1 - LearningRate * dW1
+                b1 = b1 - LearningRate * db1
+                W2 = W2 - LearningRate * dW2
+                b2 = b2 - LearningRate * db2
+    ```
+- Forward propagation:
+  ```
+    Z1 = W1A0 + b1    # A0 is X
+    A1 = g1(Z1)
+    Z2 = W2A1 + b2
+    A2 = Sigmoid(Z2)      # Sigmoid because the output is between 0 and 1
+  ```
+- Backpropagation (derivations):
+
+  ```  
+    dZ2 = A2 - Y      # derivative of cost function we used * derivative of the sigmoid function
+    dW2 = (dZ2 * A1.T) / m
+    db2 = Sum(dZ2) / m
+    dZ1 = (W2.T * dZ2) * g'1(Z1)  # element wise product (*)
+    dW1 = (dZ1 * A0.T) / m   # A0 = X
+    db1 = Sum(dZ1) / m
+    # Hint there are transposes with multiplication because to keep dimensions correct
+    ```
+
+### Backprop intuition
+- https://www.youtube.com/watch?v=mH9GBJ6og5A&list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi&index=5
+- Logistic regression we had:
+  - <img src="media/08.png" width=400>
+  - <img src="media/08a.png" width=400>
+- In Neural Network we have:
+  - <img src="media/08b.png" width=400>
+  - <img src="media/08c.png" width=400>
+  - <img src="media/08d.png" width=400> <img src="media/08e.png" width=400> 
+  - <img src="media/08f.png" width=4000>
+  
+### Random Initialization
+- In logistic regression it wasn't important to initialize the weights randomly, while in NN we have to initialize them randomly.
+
+- If we initialize all the weights with zeros in NN it won't work (initializing bias with zero is OK):
+  - all hidden units will be completely identical (symmetric) - compute exactly the same function
+  - on each gradient descent iteration all the hidden units will always update the same
+
+- To solve this we initialize the W's with a small random numbers:
+  ```
+  W1 = np.random.randn((2,2)) * 0.01    # 0.01 to make it small enough
+  b1 = np.zeros((2,1))                  # its ok to have b as zero, it won't get us to the symmetry breaking problem
+  ```
+
+- We need small values because in `sigmoid` (or `tanh`), for example, if the weight is too large you are more likely to end up even at the very start of training with very large values of Z. Which causes your `tanh` or your `sigmoid` activation function to be saturated, thus slowing down learning. If you don't have any `sigmoid` or `tanh` activation functions throughout your neural network, this is less of an issue.
+
+- Constant `0.01` is alright for 1 hidden layer networks, but if the NN is deep this number can be changed but it will always be a small number.
+
+### General Notes
+- The general methodology to build a Neural Network is to:
+  1. Define the neural network structure ( # of input units,  # of hidden units, etc). 
+  2. Initialize the model's parameters
+  3. Loop:
+      - Implement forward propagation
+      - Compute loss
+      - Implement backward propagation to get the gradients
+      - Update parameters (gradient descent)

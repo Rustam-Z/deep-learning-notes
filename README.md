@@ -16,6 +16,7 @@ Source: [coursera.org](https://www.coursera.org/specializations/deep-learning)
 5. *Natural Language Processing: Building sequence models* - Recurrent Neural Networks (RNNs), natural language processing (NLP)
 
 ## Similar Notes
+- https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi
 - Beautifully drawn notes 
   - https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng
 - DeepLearning.ai Courses Notes 
