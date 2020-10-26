@@ -616,3 +616,34 @@ g'(z) = { 0.01  if z < 0
   ```
 
 - During `forward propagation`, in the forward function for a layer ll you need to know what is the activation function in a layer (Sigmoid, tanh, ReLU, etc.). During `backpropagation`, the corresponding backward function also needs to know what is the activation function for layer ll, since the gradient depends on i
+
+
+## General Notes
+- How to build a neural network?
+  -  Initialize the parameters for a two-layer network and for an  `L`-layer neural network.
+  - Implement the forward propagation module (shown in purple in the figure below).
+    - Complete the `LINEAR` part of a layer's forward propagation step (resulting in  `Z[l]Z[l]`).
+    - We give you the `ACTIVATION` function (`relu/sigmoid`).
+    - Combine the previous two steps into a new `[LINEAR->ACTIVATION]` forward function.
+    - Stack the `[LINEAR->RELU]` forward function `L-1` time (for layers 1 through L-1) and add a `[LINEAR->SIGMOID]` at the end (for the final layer  LL ). This gives you a new L_model_forward function. 
+
+  - Compute the loss.  
+  - Implement the backward propagation module (denoted in red in the figure below).
+    - Complete the `LINEAR` part of a layer's backward propagation step.
+    - We give you the gradient of the `ACTIVATE` function (`relu_backward/sigmoid_backward`)
+    - Combine the previous two steps into a new `[LINEAR->ACTIVATION]` backward function.
+    - Stack `[LINEAR->RELU]` backward `L-1` times and add `[LINEAR->SIGMOID]` backward in a new L_model_backward function
+
+  - <img src="media/final outline.png" width=500>
+
+
+## 3.3 - General methodology
+- As usual you will follow the Deep Learning methodology to build the model:
+
+  - Initialize parameters / Define hyperparameters
+  - Loop for num_iterations:
+      1. Forward propagation
+      2. Compute cost function
+      3. Backward propagation
+      4. Update parameters (using parameters, and grads from backprop) 
+  - Use trained parameters to predict labels
