@@ -10,7 +10,6 @@
 
 - [Gradient Checking](https://www.coursera.org/learn/deep-neural-network/ungradedLab/gjSPw/gradient-checking), [lab link](https://www.coursera.org/learn/deep-neural-network/ungradedLab/gjSPw/lab)
 
-- 
 
 ## Content
 - [Week 1: Practical aspects of Deep Learning](#Week-1:-Practical-aspects-of-Deep-Learning)
@@ -32,6 +31,8 @@
         - [Gradient checking, implementation notes](#Gradient-checking-implementation-notes)
 
 - [Week 2: Optimization algorithms](#Week-2:-Optimization-algorithms)
+    -[Mini-batch gradient descent](#Mini-batch-gradient-descent)
+    - [Understanding mini-batch gradient descent](#Understanding-mini-batch-gradient-descent)
 
 ## Week 1: Practical aspects of Deep Learning
 
@@ -201,4 +202,13 @@
 ## Week 2: Optimization algorithms
 
 ### Mini-batch gradient descent
+<img src="media/04.png" width=600>
 
+<img src="media/05.png" width=600>
+
+### Understanding mini-batch gradient descent
+<img src="media/06.png" width=600>
+
+<img src="media/07.png" width=600>
+
+<img src="media/08.png" width=600>
