@@ -202,13 +202,13 @@
 ## Week 2: Optimization algorithms
 
 ### Mini-batch gradient descent
-<img src="media/04.png" width=600>
+<img src="media/04.PNG" width=600>
 
-<img src="media/05.png" width=600>
+<img src="media/05.PNG" width=600>
 
 ### Understanding mini-batch gradient descent
-<img src="media/06.png" width=600>
+<img src="media/06.PNG" width=600>
 
-<img src="media/07.png" width=600>
+<img src="media/07.PNG" width=600>
 
-<img src="media/08.png" width=600>
+<img src="media/08.PNG" width=600>
