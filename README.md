@@ -15,10 +15,9 @@ Source: [coursera.org](https://www.coursera.org/specializations/deep-learning)
 4. *Convolutional Neural Networks* - all about CNN
 5. *Natural Language Processing: Building sequence models* - Recurrent Neural Networks (RNNs), natural language processing (NLP)
 
-## Similar Notes
+## Extra Resources
 - https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi
 - Beautifully drawn notes 
   - https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng
-- DeepLearning.ai Courses Notes 
-  - https://github.com/mbadry1/DeepLearning.ai-Summary)
+- https://github.com/mbadry1/DeepLearning.ai-Summary)
 

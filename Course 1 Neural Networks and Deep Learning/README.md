@@ -1,11 +1,21 @@
-# Neural Networks and Deep Learning
-- Understand the major technology trends driving Deep Learning
-- Be able to build, train and apply fully connected deep neural networks 
-- Know how to implement efficient (vectorized) neural networks 
-- Understand the key parameters in a neural network's architecture 
+# [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
 
-## Introduction to Deep Learning: Week 1
-> Be able to explain the major trends driving the rise of deep learning, and understand where and how it is applied today.
+- Logistic Regression with Neural Network
+- Cost function, Forward prop, Backward prob, Gradient descent
+
+## Coursera Certificate
+<img src="media/certificate.jpg" width=500>
+
+## Labs
+- [Logistic Regression with a Neural Network mindset](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/63Vsy/logistic-regression-with-a-neural-network-mindset), implementing logistic regression, [lab code](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/63Vsy/lab)
+
+- [Planar data classification with a hidden layer](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/l8YCO/planar-data-classification-with-a-hidden-layer), NN with one hidden unit, back prop intuition, [lab code](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/l8YCO/lab)
+
+- [Building your Deep Neural Network: Step by Step](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/uBZOE/building-your-deep-neural-network-step-by-step), implementing all helper functions of NN, [lab code](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/uBZOE/lab)
+
+- [Deep Neural Network - Application](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/Aj5LG/deep-neural-network-application), cat & non-cat application with NN, [lab code](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/Aj5LG/lab)
+
+##  Week 1: Introduction to Deep Learning
 
 ### Machine Learning vs Deep Learning
 - ANN (artificial neural networks), CNN, RNN
@@ -13,7 +23,9 @@
 
 ### What is neural network? 
 - [Lecture notes](notes/01_What_is_Neural_Network.pdf) 
+
 - NN is a powerful learning algorithm inspired by how the brain works. 
+
 - <img src="media/what-is-nn.png" width=400>
 
 ### Supervised Learning for Neural Networks
@@ -28,7 +40,6 @@
 - Large amount of data! We see that traditional algorithms reach to a threshold on performance. However, NN always works better with more data. So you can get better performance as long as you collecting more and more data, without changing the algorithm itself.
 - <img src="media/dl-taking-off.jpeg" width=400>
 
-
 ## Neural Networks Basics
 > LogReg for NN, making prediction, derivative computation, and gradient descent | Compute LogReg using back prop | Python, NumPy, implement vectorization
 
@@ -42,6 +53,7 @@
   - `Y(1) is the first output vector`
   - `X = [x(1) x(2).. x(M)]`
   - `Y = (y(1) y(2).. y(M))`
+
 ### Logistic Regression
 - [Lecture notes](notes/05_Logistic_Regression.pdf), [YouTube Video Part 1](https://www.youtube.com/watch?v=L_xBe7MbPwk) & [Part 2](https://www.youtube.com/watch?v=uFfsSgQgerw)
 - Predict whether `0 or 1`, classification algorithm of 2 classes
@@ -110,7 +122,7 @@
   d(z)  = d(l)/d(z) = a - y
   d(W1) = X1 * d(z)
   d(W2) = X2 * d(z)
-  d(B)  = d(z)
+  d(B)  = d(z)f
   ```
 
 - From the above we can conclude the logistic regression pseudo code:
@@ -226,7 +238,6 @@
 
 
 ### General Notes
-
 - The main steps for building a Neural Network are:
 	- Define the model structure (such as number of input features and outputs)
 	- Initialize the model's parameters.
@@ -236,18 +247,13 @@
 		- Update parameters (gradient descent)
 
 - Preprocessing the dataset is important.
-
 - Tuning the learning rate (which is an example of a "hyperparameter") can make a big difference to the algorithm.
-
-- kaggle.com is a good place for datasets and competitions.
 
 
 ## Shallow neural networks: Week 2
-
 > Learn to build a neural network with one hidden layer, using forward propagation and backpropagation.
 
 ### Neural Networks Overview
-
 - In logistic regression we had:
 
   ```
@@ -298,7 +304,7 @@
 
 ### Vectorizing across multiple examples
 
-- Pseudo code for forward propagation for the 2 layers NN:
+- Pseudo code for **forward propagation** for the 2 layers NN:
 
   ```
   for i = 1 to m
@@ -634,12 +640,11 @@ g'(z) = { 0.01  if z < 0
     - Combine the previous two steps into a new `[LINEAR->ACTIVATION]` backward function.
     - Stack `[LINEAR->RELU]` backward `L-1` times and add `[LINEAR->SIGMOID]` backward in a new L_model_backward function
 
-  - <img src="media/final outline.png" width=500>
+    <img src="media/final outline.png" width=500>
 
 
-## 3.3 - General methodology
+## General Methodology
 - As usual you will follow the Deep Learning methodology to build the model:
-
   - Initialize parameters / Define hyperparameters
   - Loop for num_iterations:
       1. Forward propagation
