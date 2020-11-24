@@ -1,21 +1,30 @@
 # [Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization](https://www.coursera.org/learn/deep-neural-network)
+- More about optimization techniques (mini-batch, stochastic, Adam, RMS), regularization, hyperparameters tuning
 
-<!-- ## Coursera Certificate
-<img src="media/certificate.jpg" width=500> -->
+## Coursera Certificate
+<a href="https://www.coursera.org/account/accomplishments/certificate/VZSUJ4L9ZEKJ">
+    <img src="media/certificate.png" width=500>
+</a>
 
 ## Labs
-- [Initialization](https://www.coursera.org/learn/deep-neural-network/ungradedLab/p81Pk/initialization), implementing random initialization, [lab link](https://www.coursera.org/learn/deep-neural-network/ungradedLab/p81Pk/lab)
+- [Initialization](https://www.coursera.org/learn/deep-neural-network/ungradedLab/p81Pk/initialization), implementing random initialization, [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/p81Pk/lab)
 
-- [Regularization](https://www.coursera.org/learn/deep-neural-network/ungradedLab/xioPP/regularization), implementing regularization, understand what is the regularization, [lab link](https://www.coursera.org/learn/deep-neural-network/ungradedLab/xioPP/lab)
+- [Regularization](https://www.coursera.org/learn/deep-neural-network/ungradedLab/xioPP/regularization), implementing regularization, understand what is the regularization, [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/xioPP/lab)
 
-- [Gradient Checking](https://www.coursera.org/learn/deep-neural-network/ungradedLab/gjSPw/gradient-checking), [lab link](https://www.coursera.org/learn/deep-neural-network/ungradedLab/gjSPw/lab)
+- [Gradient Checking](https://www.coursera.org/learn/deep-neural-network/ungradedLab/gjSPw/gradient-checking), [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/gjSPw/lab)
+
+- [Optimization](https://www.coursera.org/learn/deep-neural-network/ungradedLab/hMnJ2/optimization), Adam & RMS prop, mini-batch GD, GD with momemtum, [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/hMnJ2/lab)
+
+- [TensorFlow](#https://www.coursera.org/learn/deep-neural-network/ungradedLab/9xqJ2/tensorflow), hands detection, [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/9xqJ2/lab)
 
 
 ## Content
 - [Week 1: Practical aspects of Deep Learning](#Week-1:-Practical-aspects-of-Deep-Learning)
     - Setting up your Machine Learning Application
         - [Train/Dev/Test sets](#Train/Dev/Test-sets)
+
         - [Bias/Variance](#Bias/Variance)
+
         - [Basic Recipe for ML (what to do if you have high bias/variance)](#Basic-Recipe-for-Machine-Learning)
 
     - Regularizing your neural network
@@ -25,14 +34,51 @@
 
     - Setting up your optimization problem
         - [Normalizing inputs](#Normalizing-inputs)
+
         - [Vanishing/exploding gradients](#Vanishing/Exploding-gradients)
+
         - Weight Initialization for Deep Networks
-        - Numerical approximation of gradients
+
+        - [Numerical approximation of gradients](#Numerical-approximation-of-gradients)
+
         - [Gradient checking, implementation notes](#Gradient-checking-implementation-notes)
 
+        - [General Notes: Dropout](#general-notes)
+
 - [Week 2: Optimization algorithms](#Week-2:-Optimization-algorithms)
-    -[Mini-batch gradient descent](#Mini-batch-gradient-descent)
+    - [Mini-batch gradient descent](#Mini-batch-gradient-descent)
+
     - [Understanding mini-batch gradient descent](#Understanding-mini-batch-gradient-descent)
+
+    - Exponentially weighted averages
+
+    - [Gradient descent with momentum](#Gradient-descent-with-momentum)
+
+    - [RMSprop](#RMSprop)
+
+    - [Adam optimization algorithm](#Adam-optimization-algorithm)
+
+    - [Learning rate decay](#Learning-rate-decay)
+
+    - The problem of local optima (unlikely to get stuck, because of high dimensionality)
+
+- [Week 3: Hyperparameter tuning, Batch Normalization and Programming Frameworks](#Week-3)
+    - Hyperparameter tuning
+
+        - Tuning process
+
+        - Using an appropriate scale to pick hyperparameters (use logarithmic scale)
+
+        - Hyperparameters tuning in practice: Pandas vs. Caviar
+
+    - Batch Normalization
+
+        - [Normalizing activations in a network](#Normalizing-activations-in-a-network)
+
+    - Multi-class classification
+
+    - TensorFlow
+
 
 ## Week 1: Practical aspects of Deep Learning
 
@@ -53,7 +99,7 @@
 - Underfitting --> high bias
 - Overfitting --> high variance
 - Your model will be alright if you balance the Bias / Variance
-    <img src="media/1.png" width=400>
+- <img src="media/1.png" width=400>
 - High Bias (underfitting)
     - Training error = 15%
     - Dev error = 14%   
@@ -126,7 +172,7 @@
     - You could also apply a random position and rotation to an image to get more data
 
 - **Early stopping**
-    - <img src="media/02.png" widht=400>
+    <img src="media/02.png" widht=400>
 
 - **Model Ensembles**
     - Train multiple independent models
@@ -135,7 +181,7 @@
 
 ### Normalizing inputs
 - It makes the cost function faster to optimize.
-- The shape of cost function will be consistent, which will speed up learning.
+
 - Normalization are going on these steps:
     1. Get the mean of the training set: `mean = (1/m) * sum(x(i))`
     2. Subtract the mean from each input: `X = X - mean`. This makes your inputs centered around 0.
@@ -151,6 +197,7 @@
     Y' = W[L] [1.5  0]^(L-1) X = 1.5^L 	# which will be very large
               [0  1.5]
     ```
+
 - If `W < I` (Identity matrix) the activation and gradients will `vanish`.
     ```
     if W[l] = [0.5  0]
@@ -161,11 +208,14 @@
 
 ### Weight Initialization for Deep Networks
 - A partial solution to the Vanishing / Exploding gradients in NN is better or more careful choice of the random initialization of weights
+
 - For `tanh` `np.random.rand(shape) * np.sqrt(1/n[l-1])`   
+
 - For `ReLU` `np.random.rand(shape) * np.sqrt(2/n[l-1])`
 
 ### Numerical approximation of gradients
 - Gradient checking which tells you if implementation of backpropagation is correct.
+
 - Use ONLY for DEBUGGING! Because it is slow than gradient descent
 - Gradient checking
     - Take `W[1], b[1], ... W[L], b[L]` and reshape into one big vector (theta)
@@ -193,7 +243,7 @@
 
 ### General Notes
 - <img src="media/03.png">
-- Dropout is a regularization technique.
+- **Dropout** is a regularization technique.
 - You only use dropout during training. Don't use dropout (randomly eliminate nodes) during test time.
 - Apply dropout both during forward and backward propagation.
 - During training time, divide each dropout layer by keep_prob to keep the same expected value for the activations. For example, if keep_prob is 0.5, then we will on average shut down half the nodes, so the output will be scaled by 0.5 since only the remaining half are contributing to the solution. Dividing by 0.5 is equivalent to multiplying by 2. Hence, the output now has the same expected value. You can check that this works even when keep_prob is other values than 0.5.
@@ -202,13 +252,40 @@
 ## Week 2: Optimization algorithms
 
 ### Mini-batch gradient descent
-<img src="media/04.PNG" width=600>
-
-<img src="media/05.PNG" width=600>
+<img src="media/04.PNG" width=500>
+<img src="media/05.PNG" width=500>
 
 ### Understanding mini-batch gradient descent
-<img src="media/06.PNG" width=600>
+<img src="media/06.PNG" width=500>
+<img src="media/07.PNG" width=500>
+<img src="media/08.PNG" width=500>
 
-<img src="media/07.PNG" width=600>
+### Gradient descent with momentum
+<img src="media/09.PNG" width=500>
+<img src="media/10.PNG" width=500>
 
-<img src="media/08.PNG" width=600>
+- The momentum algorithm almost always works faster than standard gradient descent.
+
+### RMSprop
+<img src="media/11.PNG" width=500>
+- Stands for **Root mean square prop**.
+- This algorithm speeds up the gradient descent.
+
+### Adam optimization algorithm
+- Adam optimization simply puts RMSprop and momentum together!
+<img src="media/12.PNG" width=500>
+<img src="media/13.PNG" width=500>
+
+
+### Learning rate decay
+<img src="media/15.PNG" width=500>
+<img src="media/16.PNG" width=500>
+
+
+## Week 3
+- Hyperparameter tuning, Batch Normalization and Programming Frameworks
+
+### Normalizing activations in a network
+<img src="media/17.PNG" width=500>
+<img src="media/18.PNG" width=500>
+<img src="media/19.PNG" width=500>
