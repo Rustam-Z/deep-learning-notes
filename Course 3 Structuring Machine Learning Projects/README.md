@@ -10,8 +10,6 @@
 
 - Human-level performance (Bayes error)
 
-- 
-
 ## Content
 - Week 1
     - Introduction to ML strategy
@@ -24,52 +22,51 @@
 
         - [Satisficing and Optimizing metric](#Satisficing-and-Optimizing-metric)
 
-        - Train/dev/test distributions
+        - [Train/dev/test distributions](#Train/dev/test-distributions)
 
-        - Size of the dev and test sets
+        - [Size of the dev and test sets](#Size-of-the-dev-and-test-sets)
 
-        - When to change dev/test sets and metrics
+        - [When to change dev/test sets and metrics](#When-to-change-dev-test-sets-and-metrics)
 
     - Comparing to human-level performance
-        - Why human level performance
+        - [Why human level performance](#Why-human-level-performance)
 
-        - Avoidable bias
+        - [Avoidable bias](#Avoidable-bias)
 
-        - Surpassing human-level performance
+        - [Surpassing human-level performance](#Surpassing-human-level-performance)
 
-        - Improving your model performance (summary)
+        - [Improving your model performance](#Improving-your-model-performance) (summary)
 
-    - ML flight simulator
+    - [ML flight simulator](Bird_recognition_in_the_city_of_Peacetopia.pdf)
 
 - Week 2
 
 ## Week 1: Introduction to ML strategy
 
 ### Why ML strategy
-<img src="media/01.png" width=500>
+<img src="media/01.PNG" width=500>
 
 ### Orthogonalization
 [Supplemental notes](Orthogonalization.pdf)
 
-<img src="media/02.png" width=500>
-<img src="media/03.png" width=500>
+<img src="media/02.PNG" width=500>
+<img src="media/03.PNG" width=500>
 
 ### Single number evaluation metric
 [Supplemental notes](Single_number_evaluation_metric-2.pdf)
 
-<img src="media/04.png" width=500>
-<img src="media/05.png" width=500>
+<img src="media/04.PNG" width=500>
+<img src="media/05.PNG" width=500>
 
 ### Satisficing and Optimizing metric
 [Supplemental notes](Satisficing_and_optimizing_metric.pdf)
 
-
 ### Train/dev/test distributions
 [Supplemental notes](Training_development_and_test_distributions.pdf)
 
-<img src="media/06.png" width=500>
-<img src="media/07.png" width=500>
-<img src="media/08.png" width=500>
+<img src="media/06.PNG" width=500>
+<img src="media/07.PNG" width=500>
+<img src="media/08.PNG" width=500>
 
 - Setting up the `training`, `development` and `test` sets have a huge impact on productivity. It is important to choose the `development` and `test` sets from the **same distribution** and it must be taken randomly from all the data.
 
@@ -79,9 +76,9 @@ important to do well.
 ### Size of the dev and test sets
 [Supplemental notes](Size_of_the_development_and_test_sets.pdf)
 
-<img src="media/09.png" width=500>
-<img src="media/10.png" width=500>
-<img src="media/11.png" width=500>
+<img src="media/09.PNG" width=500>
+<img src="media/10.PNG" width=500>
+<img src="media/11.PNG" width=500>
 
 ### When to change dev/test sets and metrics
 [Supplemental notes](When_to_change_develpment_test_sets_and_metrics.pdf)
@@ -101,6 +98,6 @@ important to do well.
 ### Improving your model performance
 [Supplemental notes](Improving_your_model_performance.pdf)
 
-<img src="media/12.png" width=500>
-<img src="media/13.png" width=500>
+<img src="media/12.PNG" width=500>
+<img src="media/13.PNG" width=500>
 
