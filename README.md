@@ -1,23 +1,90 @@
-# DeepLearning.ai Courses Notes
-Deep Learning Specialization on [Coursera](https://www.coursera.org/specializations/deep-learning)
+# Deep Learning Learning Area
 
-My Path to Learning DL. This repository contains my personal notes on DeepLearning.ai specialization courses, 18 October 2020
+Rustam_Z 🚀, 18 October 2020
 
-## About this Specialization
-In five courses, you will learn the foundations of Deep Learning, understand how to build neural networks, and learn how to lead successful machine learning projects. You will learn about Convolutional networks, RNNs, LSTM, Adam, Dropout, BatchNorm, Xavier/He initialization, and more. You will work on case studies from healthcare, autonomous driving, sign language reading, music generation, and natural language processing. You will master not only the theory, but also see how it is applied in industry. You will practice all these ideas in Python and in TensorFlow. 
+## 1. DeepLearning.ai DL Specialization
 
-Source: [coursera.org](https://www.coursera.org/specializations/deep-learning)
+Deep Learning Specialization on [Coursera](https://www.coursera.org/specializations/deep-learning) 
 
-## Courses
-1. *Neural Networks and Deep Learning* - just a start, architecture of NN
-2. *Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization* - TensorFlow, optomization algos
-3. *Structuring Machine Learning Projects* - how to build a successful machine learning projects, and how to prioritize the problem
-4. *Convolutional Neural Networks* - all about CNN
-5. *Natural Language Processing: Building sequence models* - Recurrent Neural Networks (RNNs), natural language processing (NLP)
+- **Neural Networks and Deep Learning** 
+  - Just a start, architecture of NN
 
-## Extra Resources
-- https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi
-- Beautifully drawn notes 
-  - https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng
-- https://github.com/mbadry1/DeepLearning.ai-Summary)
+  - Logistic Regression
 
+  - Cost function, Forward propagation, Backpropagation, Gradient descent
+
+  - Artificial Neural Network
+
+  - Logistic Regression vs NN, Activation fanctions, L-layer NN
+
+- **Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization** 
+  - Train/dev/test sets
+
+  - Regularization, dropout technique, normalizing inputs, gradient checking
+
+  - Optimization algos (mini-batch GD, GD with momentum, RMS, Adam optimization)
+
+  - Xavier/He initialization
+
+  - Hyperparameters tuning (logarithmic scale), batch normalization
+
+  - Multiclass classification, TensorFlow
+
+- **Structuring Machine Learning Projects** 
+  - How to build a successful machine learning projects
+
+  - How to prioritize the problem
+
+  - ML strategy (satisficing & optimizing metrics)
+
+  - Choose a correct train/dev/test split of your dataset
+
+  - Human-level performance (avoidable bias)
+
+- **Convolutional Neural Networks** 
+  - all about CNN
+
+- **Natural Language Processing: Building sequence models**
+  -  Recurrent Neural Networks (RNNs), natural language processing (NLP)
+
+
+## Resources
+- [GitHub notes](https://github.com/mbadry1/DeepLearning.ai-Summary)
+
+- [TA Deep Learning Notes](https://yiqiaoyin.files.wordpress.com/2018/02/deep-learning-notes.pdf)
+
+- [Krish Naik's complete DL course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi)
+
+- [Krish Naik's complete ML course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
+
+- [Beautifully drawn DL notes](https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng)
+
+- [TensorFlow Resources](https://www.tensorflow.org/resources/learn-ml)
+
+- [TensorFlow Turorial](https://www.tensorflow.org/tutorials/)
+
+
+## From top companies
+- [Google's ML Crash Course](https://developers.google.com/machine-learning/crash-course)
+
+- [Amazon Machine Learning Guide](https://docs.aws.amazon.com/machine-learning/latest/dg/machinelearning-dg.pdf)
+
+
+## For research
+- [MIT Deep Learning](http://introtodeeplearning.com/)
+
+- https://ai.google/education
+
+- https://openai.com/blog/tags/research/
+
+- https://deepmind.com/research
+
+- https://www.microsoft.com/en-us/research/research-area/artificial-intelligence
+
+- https://www.research.ibm.com/artificial-intelligence/#publications
+
+- https://ai.stanford.edu
+
+- https://www.csail.mit.edu
+
+- https://ai.google/research/

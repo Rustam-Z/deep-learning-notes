@@ -1,7 +1,10 @@
 # [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
 
-- Logistic Regression with Neural Network
-- Cost function, Forward prop, Backward prob, Gradient descent
+- Logistic Regression
+- Cost function, Forward propagation, Backpropagation, Gradient descent
+- Artificial Neural Network
+- Logistic Regression vs NN, Activation fanction, L-layer NN
+- [General Methodology](#General-Methodology)
 
 ## Coursera Certificate
 <img src="media/certificate.jpg" width=500>
@@ -237,7 +240,7 @@
 - Gradient descent converges faster after normalization of the input matrices.
 
 
-### General Notes
+### General Notes 1
 - The main steps for building a Neural Network are:
 	- Define the model structure (such as number of input features and outputs)
 	- Initialize the model's parameters.
@@ -480,7 +483,7 @@ g'(z) = { 0.01  if z < 0
 - Constant `0.01` is alright for 1 hidden layer networks, but if the NN is deep this number can be changed but it will always be a small number.
 
 
-### General Notes
+### General Notes 2
 - The general methodology to build a Neural Network is to:
   1. Define the neural network structure ( # of input units,  # of hidden units, etc). 
   2. Initialize the model's parameters
@@ -624,7 +627,7 @@ g'(z) = { 0.01  if z < 0
 - During `forward propagation`, in the forward function for a layer ll you need to know what is the activation function in a layer (Sigmoid, tanh, ReLU, etc.). During `backpropagation`, the corresponding backward function also needs to know what is the activation function for layer ll, since the gradient depends on i
 
 
-## General Notes
+## General Notes 3
 - How to build a neural network?
   -  Initialize the parameters for a two-layer network and for an  `L`-layer neural network.
   - Implement the forward propagation module (shown in purple in the figure below).
