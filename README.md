@@ -2,9 +2,7 @@
 
 Rustam_Z 🚀, 18 October 2020
 
-## 1. DeepLearning.ai DL Specialization
-
-Deep Learning Specialization on [Coursera](https://www.coursera.org/specializations/deep-learning) 
+## deeplearning.ai [DL Specialization](https://www.coursera.org/specializations/deep-learning)
 
 - **Neural Networks and Deep Learning** 
   - Just a start, architecture of NN
@@ -59,22 +57,22 @@ Deep Learning Specialization on [Coursera](https://www.coursera.org/specializati
 
 - [Beautifully drawn DL notes](https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng)
 
-- [TensorFlow Resources](https://www.tensorflow.org/resources/learn-ml)
-
 - [TensorFlow Turorial](https://www.tensorflow.org/tutorials/)
 
 
-## From top companies
+## General Resources
+- [TensorFlow Resources](https://www.tensorflow.org/resources/learn-ml)
+
 - [Google's ML Crash Course](https://developers.google.com/machine-learning/crash-course)
-
-- [Amazon Machine Learning Guide](https://docs.aws.amazon.com/machine-learning/latest/dg/machinelearning-dg.pdf)
-
-
-## For research
-- [MIT Deep Learning](http://introtodeeplearning.com/)
 
 - https://ai.google/education
 
+- [Amazon Machine Learning Guide](https://docs.aws.amazon.com/machine-learning/latest/dg/machinelearning-dg.pdf)
+
+- [MIT Deep Learning](http://introtodeeplearning.com/)
+
+
+## Research companies
 - https://openai.com/blog/tags/research/
 
 - https://deepmind.com/research
