@@ -1,5 +1,7 @@
 # [Structuring Machine Learning Projects](https://www.coursera.org/learn/machine-learning-projects)
 
+[Coursera Certificate](Coursera-WRWECF27GCYE.pdf)
+
 - How to build a successful machine learning projects
 
 - How to prioritize the problem
@@ -37,9 +39,30 @@
 
         - [Improving your model performance](#Improving-your-model-performance) (summary)
 
-    - [ML flight simulator](Bird_recognition_in_the_city_of_Peacetopia.pdf)
+    - [Bird recognition](Bird_recognition_in_the_city_of_Peacetopia.pdf) (case study)
 
 - Week 2
+    - Error Analysis
+        - Carrying out error analysis
+
+        - Cleaning up incorrectly labeled data
+
+        - Build your first system quickly, then iterate
+
+    - Mismatched training and dev/test set
+        - Training and testing on different distributions
+
+        - Bias and Variance with mismatched data distributions
+
+    - Learning from multiple tasks
+        - Transfer learning
+
+    - End-to-end deep learning
+        - What is end-to-end deep learning?
+
+        - Whether to use end-to-end deep learning
+
+    - [Autonomous driving](Autonomous_driving.pdf) (case study)
 
 ## Week 1: Introduction to ML strategy
 
@@ -101,3 +124,28 @@ important to do well.
 <img src="media/12.PNG" width=500>
 <img src="media/13.PNG" width=500>
 
+## Week 2
+### Carrying out error analysis
+[Github notes](https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/3-%20Structuring%20Machine%20Learning%20Projects#carrying-out-error-analysis)
+
+
+### Build System Quickly
+[Supplemental notes](Build_System_Quickly.pdf)
+
+### Training and testing on different distributions
+[Supplemental notes](Training_and_testing_on_different_distributions.pdf)
+
+### Bias and Variance with mismatched data distributions
+[Supplemental notes](Bias_and_variance_with_mismatched_data_distributions.pdf)
+
+### Addressing data mismatch
+[Supplemental notes](Adressing_data_mismatch.pdf)
+
+### Transfer learning
+[Supplemental notes](Transfer_Learning.pdf)
+
+### What is end-to-end deep learning
+[Supplemental notes](What_is_end_to_end_deep_learning.pdf)
+
+### Whether to use end-to-end deep learning
+[Supplemental notes](Whether_to_use_end_to_end_deep_learning.pdf)
