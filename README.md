@@ -39,8 +39,18 @@ Rustam_Z 🚀, 18 October 2020
 
   - Human-level performance (avoidable bias)
 
+  - Error Analysis
+
+  - Mismatched training and dev/test set
+
 - **Convolutional Neural Networks** 
-  - all about CNN
+  - Foundations of Convolutional Neural Networks
+
+  - Deep convolutional models: case studies
+  
+  - Object detection
+
+  - Special applications: Face recognition & Neural style transfer
 
 - **Natural Language Processing: Building sequence models**
   -  Recurrent Neural Networks (RNNs), natural language processing (NLP)

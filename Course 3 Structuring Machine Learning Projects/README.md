@@ -1,6 +1,8 @@
 # [Structuring Machine Learning Projects](https://www.coursera.org/learn/machine-learning-projects)
 
-[Coursera Certificate](Coursera-WRWECF27GCYE.pdf)
+Rustam_Z🚀 | 25 November 2020
+
+[Coursera Certificate](https://coursera.org/share/d6685d579c5a81f1473522edc4f2cf62)
 
 - How to build a successful machine learning projects
 
@@ -11,6 +13,10 @@
 - Choose a correct train/dev/test split of your dataset
 
 - Human-level performance (Bayes error)
+
+- Error Analysis
+
+- Mismatched training and dev/test set
 
 ## Content
 - Week 1
