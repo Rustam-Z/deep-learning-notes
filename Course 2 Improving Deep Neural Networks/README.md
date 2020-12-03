@@ -1,13 +1,9 @@
 # [Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization](https://www.coursera.org/learn/deep-neural-network)
 
 - Train/dev/test sets
-
 - Regularization, dropout technique, normalizing inputs, gradient checking
-
 - Optimization algos (mini-batch GD, GD with momentum, RMS, Adam optimization)
-
 - Hyperparameters tuning (logarithmic scale), batch normalization
-
 - Multiclass classification, TensorFlow
 
 ## Coursera Certificate
@@ -261,17 +257,13 @@
 ## Week 2: Optimization algorithms
 
 ### Mini-batch gradient descent
-<img src="media/04.PNG" width=500>
-<img src="media/05.PNG" width=500>
+<img src="media/04.PNG" width=500><img src="media/05.PNG" width=500>
 
 ### Understanding mini-batch gradient descent
-<img src="media/06.PNG" width=500>
-<img src="media/07.PNG" width=500>
-<img src="media/08.PNG" width=500>
+<img src="media/06.PNG" width=500><img src="media/07.PNG" width=500><img src="media/08.PNG" width=500>
 
 ### Gradient descent with momentum
-<img src="media/09.PNG" width=500>
-<img src="media/10.PNG" width=500>
+<img src="media/09.PNG" width=500><img src="media/10.PNG" width=500>
 
 - The momentum algorithm almost always works faster than standard gradient descent.
 
@@ -282,19 +274,15 @@
 
 ### Adam optimization algorithm
 - Adam optimization simply puts RMSprop and momentum together!
-<img src="media/12.PNG" width=500>
-<img src="media/13.PNG" width=500>
+<img src="media/12.PNG" width=500><img src="media/13.PNG" width=500>
 
 
 ### Learning rate decay
-<img src="media/15.PNG" width=500>
-<img src="media/16.PNG" width=500>
+<img src="media/15.PNG" width=500><img src="media/16.PNG" width=500>
 
 
 ## Week 3
 - Hyperparameter tuning, Batch Normalization and Programming Frameworks
 
 ### Normalizing activations in a network
-<img src="media/17.PNG" width=500>
-<img src="media/18.PNG" width=500>
-<img src="media/19.PNG" width=500>
+<img src="media/17.PNG" width=500><img src="media/18.PNG" width=500><img src="media/19.PNG" width=500>

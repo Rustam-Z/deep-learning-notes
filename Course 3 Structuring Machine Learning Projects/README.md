@@ -2,21 +2,15 @@
 
 Rustam_Z🚀 | 25 November 2020
 
-[Coursera Certificate](https://coursera.org/share/d6685d579c5a81f1473522edc4f2cf62)
-
 - How to build a successful machine learning projects
-
 - How to prioritize the problem
-
 - ML strategy
-
 - Choose a correct train/dev/test split of your dataset
-
 - Human-level performance (Bayes error)
-
 - Error Analysis
-
 - Mismatched training and dev/test set
+
+[Coursera Certificate](https://coursera.org/share/d6685d579c5a81f1473522edc4f2cf62)
 
 ## Content
 - Week 1
@@ -78,14 +72,12 @@ Rustam_Z🚀 | 25 November 2020
 ### Orthogonalization
 [Supplemental notes](Orthogonalization.pdf)
 
-<img src="media/02.PNG" width=500>
-<img src="media/03.PNG" width=500>
+<img src="media/02.PNG" width=500> <img src="media/03.PNG" width=500>
 
 ### Single number evaluation metric
 [Supplemental notes](Single_number_evaluation_metric-2.pdf)
 
-<img src="media/04.PNG" width=500>
-<img src="media/05.PNG" width=500>
+<img src="media/04.PNG" width=500> <img src="media/05.PNG" width=500>
 
 ### Satisficing and Optimizing metric
 [Supplemental notes](Satisficing_and_optimizing_metric.pdf)
@@ -93,9 +85,7 @@ Rustam_Z🚀 | 25 November 2020
 ### Train/dev/test distributions
 [Supplemental notes](Training_development_and_test_distributions.pdf)
 
-<img src="media/06.PNG" width=500>
-<img src="media/07.PNG" width=500>
-<img src="media/08.PNG" width=500>
+<img src="media/06.PNG" width=500> <img src="media/07.PNG" width=500> <img src="media/08.PNG" width=500>
 
 - Setting up the `training`, `development` and `test` sets have a huge impact on productivity. It is important to choose the `development` and `test` sets from the **same distribution** and it must be taken randomly from all the data.
 
@@ -105,9 +95,7 @@ important to do well.
 ### Size of the dev and test sets
 [Supplemental notes](Size_of_the_development_and_test_sets.pdf)
 
-<img src="media/09.PNG" width=500>
-<img src="media/10.PNG" width=500>
-<img src="media/11.PNG" width=500>
+<img src="media/09.PNG" width=500> <img src="media/10.PNG" width=500> <img src="media/11.PNG" width=500>
 
 ### When to change dev/test sets and metrics
 [Supplemental notes](When_to_change_develpment_test_sets_and_metrics.pdf)
@@ -127,8 +115,7 @@ important to do well.
 ### Improving your model performance
 [Supplemental notes](Improving_your_model_performance.pdf)
 
-<img src="media/12.PNG" width=500>
-<img src="media/13.PNG" width=500>
+<img src="media/12.PNG" width=500> <img src="media/13.PNG" width=500>
 
 ## Week 2
 ### Carrying out error analysis

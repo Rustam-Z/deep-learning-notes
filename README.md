@@ -1,11 +1,13 @@
-# Deep Learning Learning Area
+# Deep Learning Area
 
-Rustam_Z 🚀, 18 October 2020
+Hello, if you are going to dive into deep learning, I would suggest that you first take a look at the [Resources section](#Resources) that I have prepared for you. And always remember why you started learning machine learning.
 
-## deeplearning.ai [DL Specialization](https://www.coursera.org/specializations/deep-learning)
+Rustam_Z🚀, 18 October 2020
 
-- **Neural Networks and Deep Learning** 
-  - Just a start, architecture of NN
+## deeplearning.ai [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
+
+### [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
+  - Architecture of Neural Network
 
   - Logistic Regression
 
@@ -15,7 +17,7 @@ Rustam_Z 🚀, 18 October 2020
 
   - Logistic Regression vs NN, Activation fanctions, L-layer NN
 
-- **Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization** 
+### [Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization](https://www.coursera.org/learn/deep-neural-network)
   - Train/dev/test sets
 
   - Regularization, dropout technique, normalizing inputs, gradient checking
@@ -26,9 +28,9 @@ Rustam_Z 🚀, 18 October 2020
 
   - Hyperparameters tuning (logarithmic scale), batch normalization
 
-  - Multiclass classification, TensorFlow
+  - Multiclass classification, TensorFlow introduction
 
-- **Structuring Machine Learning Projects** 
+### [Structuring Machine Learning Projects](https://www.coursera.org/learn/machine-learning-projects)
   - How to build a successful machine learning projects
 
   - How to prioritize the problem
@@ -43,7 +45,7 @@ Rustam_Z 🚀, 18 October 2020
 
   - Mismatched training and dev/test set
 
-- **Convolutional Neural Networks** 
+### [Convolutional Neural Networks](https://www.coursera.org/learn/convolutional-neural-networks)
   - Foundations of Convolutional Neural Networks
 
   - Deep convolutional models: case studies
@@ -52,37 +54,39 @@ Rustam_Z 🚀, 18 October 2020
 
   - Special applications: Face recognition & Neural style transfer
 
-- **Natural Language Processing: Building sequence models**
+### Natural Language Processing: Building sequence models
   -  Recurrent Neural Networks (RNNs), natural language processing (NLP)
 
 
 ## Resources
-- [GitHub notes](https://github.com/mbadry1/DeepLearning.ai-Summary)
+- [In-depth deeplearning.ai Specialization Review](https://youtu.be/ICMtmjRg0-Y), Daniel describes all about this specialization, continuation is [here](https://youtu.be/LJZIqYlKsWo)
 
-- [TA Deep Learning Notes](https://yiqiaoyin.files.wordpress.com/2018/02/deep-learning-notes.pdf)
+- [GitHub Notes](https://github.com/mbadry1/DeepLearning.ai-Summary), summaries from all courses
 
-- [Krish Naik's complete DL course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi)
+- [Krish Naik's complete DL course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi), if you get stuck and don't understand the concepts
 
 - [Krish Naik's complete ML course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
 
+- [TA Deep Learning Notes](https://yiqiaoyin.files.wordpress.com/2018/02/deep-learning-notes.pdf), haven't read actually
+
 - [Beautifully drawn DL notes](https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng)
 
-- [TensorFlow Turorial](https://www.tensorflow.org/tutorials/)
+- [TensorFlow Turorial](https://www.tensorflow.org/guide/tensor), what is the tensor?
 
 
 ## General Resources
-- [TensorFlow Resources](https://www.tensorflow.org/resources/learn-ml)
-
-- [Google's ML Crash Course](https://developers.google.com/machine-learning/crash-course)
-
-- https://ai.google/education
-
-- [Amazon Machine Learning Guide](https://docs.aws.amazon.com/machine-learning/latest/dg/machinelearning-dg.pdf)
+- [TensorFlow Resources for Learning ML](https://www.tensorflow.org/resources/learn-ml)
 
 - [MIT Deep Learning](http://introtodeeplearning.com/)
 
+- [Google's ML Crash Course](https://developers.google.com/machine-learning/crash-course)
 
-## Research companies
+- [Google AI](https://ai.google/education)
+
+- [Amazon Machine Learning Guide](https://docs.aws.amazon.com/machine-learning/latest/dg/machinelearning-dg.pdf)
+
+
+## Research
 - https://openai.com/blog/tags/research/
 
 - https://deepmind.com/research
@@ -96,3 +100,24 @@ Rustam_Z 🚀, 18 October 2020
 - https://www.csail.mit.edu
 
 - https://ai.google/research/
+
+
+## Books
+- Daniel's recommendation - https://youtu.be/7R08MPXxiFQ
+
+- [Machine Learning for Humans](https://everythingcomputerscience.com/books/Machine%20Learning%20for%20Humans.pdf)
+
+- [Python for Data Analysis](https://t.me/dsproglib/902) 2<sup>nd</sup> edition
+
+- [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://t.me/progbook2/457) 2<sup>nd</sup> edition
+
+- [Grokking Deep Learning](https://t.me/progbook2/216)
+
+- [The Mechanics of Machine Learning](https://mlbook.explained.ai/)
+
+- [The Hundred-Page Machine Learning Book](https://t.me/progbook2/121) Andriy Burkov
+
+- [The Deep Learning Book](https://t.me/progbook/61), "Written by three experts in the field, Deep Learning is the only comprehensive book on the subject."
+—Elon Musk
+
+- [Machine Learning Engineering](https://t.me/progbook2/603) Andriy Burkov
