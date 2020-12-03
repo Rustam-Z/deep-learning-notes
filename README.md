@@ -1,4 +1,4 @@
-# Deep Learning Area
+# Deep Learning Area🤖👨‍💻
 
 Hello, if you are going to dive into deep learning, I would suggest that you first take a look at the [Resources section](#Resources) that I have prepared for you. And always remember why you started learning machine learning.
 
@@ -58,7 +58,7 @@ Rustam_Z🚀, 18 October 2020
   -  Recurrent Neural Networks (RNNs), natural language processing (NLP)
 
 
-## Resources
+## Resources📄
 - [In-depth deeplearning.ai Specialization Review](https://youtu.be/ICMtmjRg0-Y), Daniel describes all about this specialization, continuation is [here](https://youtu.be/LJZIqYlKsWo)
 
 - [GitHub Notes](https://github.com/mbadry1/DeepLearning.ai-Summary), summaries from all courses
@@ -74,7 +74,7 @@ Rustam_Z🚀, 18 October 2020
 - [TensorFlow Turorial](https://www.tensorflow.org/guide/tensor), what is the tensor?
 
 
-## General Resources
+## General Resources🔗
 - [TensorFlow Resources for Learning ML](https://www.tensorflow.org/resources/learn-ml)
 
 - [MIT Deep Learning](http://introtodeeplearning.com/)
@@ -86,7 +86,7 @@ Rustam_Z🚀, 18 October 2020
 - [Amazon Machine Learning Guide](https://docs.aws.amazon.com/machine-learning/latest/dg/machinelearning-dg.pdf)
 
 
-## Research
+## Research🔬
 - https://openai.com/blog/tags/research/
 
 - https://deepmind.com/research
@@ -102,7 +102,7 @@ Rustam_Z🚀, 18 October 2020
 - https://ai.google/research/
 
 
-## Books
+## Books📚
 - Daniel's recommendation - https://youtu.be/7R08MPXxiFQ
 
 - [Machine Learning for Humans](https://everythingcomputerscience.com/books/Machine%20Learning%20for%20Humans.pdf)

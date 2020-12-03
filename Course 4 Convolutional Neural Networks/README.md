@@ -36,6 +36,8 @@ Rustam_Z🚀 | 29 November 2020
 
     - [CNN Example](#CNN-Example)
 
+    - [Why Convolutions?](#Why-Convolutions?)
+
 - WEEK 2
 
 - WEEK 3
@@ -72,3 +74,7 @@ Rustam_Z🚀 | 29 November 2020
 <img src="img/22.jpg" width=400> <img src="img/23.PNG" width=400> <img src="img/24.PNG" width=400> <img src="img/25.PNG" width=400>
 
 ### CNN Example
+<img src="img/26.PNG" width=400> <img src="img/27.PNG" width=400>
+
+### Why Convolutions?
+<img src="img/28.PNG" width=400> <img src="img/29.PNG" width=400> <img src="img/30.PNG" width=400>
