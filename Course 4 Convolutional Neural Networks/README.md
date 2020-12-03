@@ -34,7 +34,7 @@ Rustam_Z🚀 | 29 November 2020
 
     - [Pooling layers](#Pooling-Layers)
 
-    - Convolutional neural network example
+    - [CNN Example](#CNN-Example)
 
 - WEEK 2
 
@@ -82,7 +82,6 @@ Rustam_Z🚀 | 29 November 2020
 <img src="img/21.PNG" width=400>
 
 ### Pooling Layers
-<img src="img/22.jpg" width=400>
-<img src="img/23.PNG" width=400>
-<img src="img/24.PNG" width=400>
-<img src="img/25.PNG" width=400>
+<img src="img/22.jpg" width=400><img src="img/23.PNG" width=400><img src="img/24.PNG" width=400><img src="img/25.PNG" width=400>
+
+### CNN Example
