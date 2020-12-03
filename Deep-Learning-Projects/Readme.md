@@ -13,14 +13,14 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
 - Practiced with the size of a hidden layer
 - <img src="img/classification_kiank.png" width=300>
 
-### [Image Classification with NN](Image-Classification-with-NN)
-- Cat vs non-cat classification using 2 layer neural network
-- Used the helper funtions implementations from the "Planar data classification with one hidden layer"
-- <img src="img/imvectorkiank.png" width=350><img src="img/2layerNN_kiank.png" width=300><img src="img/LlayerNN_kiank.png" width=320>
-
 ### [Building Deep Neural Network](Building-Deep-Neural-Network)
 - A deep NN with many layers using ReLU activation fuction
 - <img src="img/final outline.png" width=300>
+
+### [Image Classification with NN](Image-Classification-with-NN)
+- Cat vs non-cat classification using 2-layer & L-layer NN
+- Used the helper funtions implementations from the "Building Deep Neural Network"
+- <img src="img/imvectorkiank.png" width=350><img src="img/2layerNN_kiank.png" width=300><img src="img/LlayerNN_kiank.png" width=320>
 
 ### [Optimization methods from scratch](Optimization_Methods) 
 - Stochastic Gradient Descent, Mini-batch GD with momentum, Adam optimization
