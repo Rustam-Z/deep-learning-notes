@@ -1,6 +1,6 @@
 # Deep Learning Projects 
 
-By Rustam_Z🚀 | 2 December 2020
+By Rustam_Z🚀 | Updated: 2 December 2020
 
 Here you can find all projects I have made using Deep Learing & Neural Netowrks & Computer Vision & TensorFlow
 

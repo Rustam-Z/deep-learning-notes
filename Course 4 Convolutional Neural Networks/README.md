@@ -2,7 +2,7 @@
 
 Rustam_Z🚀 | 29 November 2020
 
-- Foundations of Convolutional Neural Networks
+- Foundations of Convolutional Neural Networks (padding, striding, CN example)
 
 - Deep convolutional models: case studies
 
@@ -10,17 +10,17 @@ Rustam_Z🚀 | 29 November 2020
 
 - Special applications: Face recognition & Neural style transfer
 
-- [Online notes](https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks)
+- [Extra notes](https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks)
 
 
 ## Contents
-- [WEEK 1: Convolutional Neural Networks](#WEEK-1:-Convolutional-Neural-Networks)
+- [WEEK 1 - Foundations of Convolutional Neural Networks](#WEEK-1:-Convolutional-Neural-Networks)
 
     - [Computer vision](#Computer-Vision)
 
     - [Edge detection example](#Edge-Detection-Example)
 
-    - [More Edge Detection](#More-Edge-Detection) vertical and horizontal edges detection
+    - [More edge detection](#More-Edge-Detection) vertical and horizontal edges detection
 
     - [Padding](#Padding)
 
@@ -28,11 +28,11 @@ Rustam_Z🚀 | 29 November 2020
 
     - [Convolutions over volumes](#Convolutions-Over-Volume)
 
-    - One Layer of a Convolutional Network
+    - [One layer of a convolutional network](#One-Layer-of-a-Convolutional-Network)
 
-    - A simple convolution network example
+    - [Simple convolution network example](Simple-Convolutional-Network-Example)
 
-    - Pooling layers
+    - [Pooling layers](#Pooling-Layers)
 
     - Convolutional neural network example
 
@@ -45,26 +45,44 @@ Rustam_Z🚀 | 29 November 2020
 
 ## WEEK 1: Convolutional Neural Networks
 ### Computer Vision
-<img src="img/01.PNG" width=500>
-<img src="img/02.PNG" width=500>
+<img src="img/01.PNG" width=400>
+<img src="img/02.PNG" width=400>
 
 ### Edge Detection Example
-<img src="img/03.PNG" width=500>
-<img src="img/04.PNG" width=500>
-<img src="img/05.PNG" width=500>
+<img src="img/03.PNG" width=400>
+<img src="img/04.PNG" width=400>
+<img src="img/05.PNG" width=400>
 
 ### More Edge Detection
-<img src="img/06.PNG" width=500>
-<img src="img/07.PNG" width=500>
-<img src="img/08.PNG" width=500>
+<img src="img/06.PNG" width=400>
+<img src="img/07.PNG" width=400>
+<img src="img/08.PNG" width=400>
 
 ### Padding
-<img src="img/09.PNG" width=500>
-<img src="img/10.PNG" width=500>
+<img src="img/09.PNG" width=400>
+<img src="img/10.PNG" width=400>
 
 ### Strided Convolutions
-<img src="img/11.PNG" width=500>
-<img src="img/12.PNG" width=500>
-<img src="img/13.PNG" width=500>
+<img src="img/11.PNG" width=400>
+<img src="img/12.PNG" width=400>
+<img src="img/13.PNG" width=400>
 
 ### Convolutions Over Volume
+<img src="img/14.PNG" width=400>
+<img src="img/15.PNG" width=400>
+<img src="img/16.PNG" width=400>
+
+### One Layer of a Convolutional Network
+<img src="img/17.png" width=400>
+<img src="img/18.png" width=400>
+<img src="img/19.png" width=400>
+
+### Simple Convolutional Network Example
+<img src="img/20.PNG" width=400>
+<img src="img/21.PNG" width=400>
+
+### Pooling Layers
+<img src="img/22.jpg" width=400>
+<img src="img/23.PNG" width=400>
+<img src="img/24.PNG" width=400>
+<img src="img/25.PNG" width=400>
