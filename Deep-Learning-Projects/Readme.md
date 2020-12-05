@@ -6,6 +6,7 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
 
 ### [Logistic Regression as a Neural Network](Logistic-Regression-as-a-Neural-Network)
 - Cat vs non-cat classification using logistic regression. You can see the architecture of model below:
+
 - <img src="img/LogReg_kiank.png" width=300>
 
 ### [Planar data classification with one hidden layer](Planar-data-classification-with-one-hidden-layer)
@@ -15,6 +16,14 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
 
 ### [Building Deep Neural Network](Building-Deep-Neural-Network)
 - A deep NN with many layers using ReLU activation fuction
+- Deep Learning methodology to build the model:
+    - Initialize parameters/Define hyperparameters
+    - Loop for num_iterations:
+        1. Forward propagation
+        2. Compute cost function
+        3. Backward propagation
+        4. Update parameters (using parameters, and grads from backprop) 
+  - Use trained parameters to predict labels
 - <img src="img/final outline.png" width=300>
 
 ### [Image Classification with NN](Image-Classification-with-NN)
@@ -29,3 +38,6 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
 ### [Sign Language Detector](TensorFlow)
 - First project using TensorFlow
 - <img src="img/hands.png" width=400>
+
+### [Convolutional Neural Networks: Step by Step](CNNs-Step-by-Step)
+- Implementing convolutional (CONV) and pooling (POOL) layers in numpy, forward prop, and backprop

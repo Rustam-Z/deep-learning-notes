@@ -67,6 +67,8 @@ Rustam_Z🚀, 18 October 2020
 
 - [Krish Naik's complete ML course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
 
+- [Practical Machin Learning with Python](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v)
+
 - [TA Deep Learning Notes](https://yiqiaoyin.files.wordpress.com/2018/02/deep-learning-notes.pdf), haven't read actually
 
 - [Beautifully drawn DL notes](https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng)

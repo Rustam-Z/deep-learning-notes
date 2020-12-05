@@ -343,6 +343,8 @@
 - Look at backprob intuition below 
 
 ### Activation fanction
+- https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0
+
 - So far we are using sigmoid, but in some cases other functions can be a lot better.
 
 - Sigmoid can lead us to gradient decent problem where the updates are so low.
