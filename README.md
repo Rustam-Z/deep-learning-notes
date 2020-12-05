@@ -119,7 +119,7 @@ Rustam_Z🚀, 18 October 2020
 
 - [The Hundred-Page Machine Learning Book](https://t.me/progbook2/121) Andriy Burkov
 
-- [The Deep Learning Book](https://t.me/progbook/61), "Written by three experts in the field, Deep Learning is the only comprehensive book on the subject."
+- [Deep Learning](https://t.me/progbook/61), deeplearningbook.org, "Written by three experts in the field, Deep Learning is the only comprehensive book on the subject."
 —Elon Musk
 
 - [Machine Learning Engineering](https://t.me/progbook2/603) Andriy Burkov

@@ -39,5 +39,9 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
 - First project using TensorFlow
 - <img src="img/hands.png" width=400>
 
-### [Convolutional Neural Networks: Step by Step](CNNs-Step-by-Step)
-- Implementing convolutional (CONV) and pooling (POOL) layers in numpy, forward prop, and backprop
+### [Convolutional Neural Networks: Application](CNNs-App)
+- Sign language using the TensorFlow CNN model
+- Info: training set - 95% accuracy, test set - 80% accuracy
+- Used Adam optimization technique (mini batches) for minimizing the cost
+- <img src="img/conv1.png" width=400>
+<video width="400" autoplay><source src="img/conv_kiank.mp4" type="video/mp4"></video>
