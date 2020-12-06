@@ -43,5 +43,4 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
 - Sign language using the TensorFlow CNN model
 - Info: training set - 95% accuracy, test set - 80% accuracy
 - Used Adam optimization technique (mini batches) for minimizing the cost
-- <img src="img/conv1.png" width=400>
-<video width="400" autoplay><source src="img/conv_kiank.mp4" type="video/mp4"></video>
+- <img src="img/conv_kiank.gif" width=400><img src="img/conv1.png" width=400>
