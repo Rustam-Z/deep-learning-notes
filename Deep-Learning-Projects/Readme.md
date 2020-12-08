@@ -28,19 +28,44 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
 
 ### [Image Classification with NN](Image-Classification-with-NN)
 - Cat vs non-cat classification using 2-layer & L-layer NN
+
 - Used the helper funtions implementations from the "Building Deep Neural Network"
+
 - <img src="img/imvectorkiank.png" width=350><img src="img/2layerNN_kiank.png" width=300><img src="img/LlayerNN_kiank.png" width=320>
 
 ### [Optimization methods from scratch](Optimization_Methods) 
 - Stochastic Gradient Descent, Mini-batch GD with momentum, Adam optimization
+
 - <img src="img/opt1.gif" width=300><img src="img/opt2.gif" width=300>
 
 ### [Sign Language Detector](TensorFlow)
 - First project using TensorFlow
+
 - <img src="img/hands.png" width=400>
 
 ### [Convolutional Neural Networks: Application](CNNs-App)
 - Sign language using the TensorFlow CNN model
+
 - Info: training set - 95% accuracy, test set - 80% accuracy
+
 - Used Adam optimization technique (mini batches) for minimizing the cost
+
 - <img src="img/conv_kiank.gif" width=400><img src="img/conv1.png" width=400>
+
+### [Emotion Tracking](Emotion-Tracking)
+- `#keras`
+
+- <img src="img/face_images.png" width=400>
+
+- **Key Points to remember**
+  - Keras is a tool for rapid prototyping. It allows you to quickly try out different model architectures.
+
+  - The four steps in Keras:
+    - **Create a model** `happyModel = HappyModel(X_train.shape[1:])`
+
+    - **Compile a model** `happyModel.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"])`
+
+    - **Fit/Train** `happyModel.fit(x = X_train, y = Y_train, epochs = 40, batch_size = 60)`
+
+    - **Evaluate/Test** `preds = happyModel.evaluate(x = X_test, y = Y_test)`
+

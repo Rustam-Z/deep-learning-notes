@@ -143,12 +143,24 @@ Rustam_Z🚀 | 29 November 2020
     - https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks#inception-network-motivation
 
 - ***Inception Network***
-<img src="img/41.PNG" width=500><img src="img/42.PNG" width=500>
+<br><img src="img/41.PNG" width=500><img src="img/42.PNG" width=500>
 
 - GoogleNet - https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks#inception-network-googlenet
 
 
 ### Practical advices for using ConvNets
 ### Transfer Learning
+- https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks#transfer-learning
 
-### Data augmentation
+### Data Augmentation
+- Mirroring the picture, random cropping, rotation, shearing
+<br><img src="img/43.PNG" width=500>
+
+- <img src="img/44.PNG" width=500>
+
+- https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks#data-augmentation
+
+- https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks#state-of-computer-vision
+
+### General notes Quiz
+- Quiz analysis: https://www.programmersought.com/article/43173972595/
