@@ -10,13 +10,13 @@ Rustam_Z🚀 | 29 November 2020
 
 - Special applications: Face recognition & Neural style transfer
 
-- [Extra notes](https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks)
-
 - About CNN briefly: https://towardsdatascience.com/convolutional-neural-network-17fb77e76c05
 
 - https://cs231n.github.io/convolutional-networks/
 
 - Types of Convolutions: https://towardsdatascience.com/types-of-convolutions-in-deep-learning-717013397f4d
+
+- ResNet: https://towardsdatascience.com/hitchhikers-guide-to-residual-networks-resnet-in-keras-385ec01ec8ff
 
 ## Contents
 - [WEEK 1 - Foundations of Convolutional Neural Networks](#WEEK-1:-Convolutional-Neural-Networks)

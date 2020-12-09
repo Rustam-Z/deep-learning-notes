@@ -59,25 +59,29 @@ Rustam_Z🚀, 18 October 2020
 
 
 ## Resources📄
+The list of things you need for this particular specialization
+
 - [In-depth deeplearning.ai Specialization Review](https://youtu.be/ICMtmjRg0-Y), Daniel describes all about this specialization, continuation is [here](https://youtu.be/LJZIqYlKsWo)
 
-- [GitHub Notes](https://github.com/mbadry1/DeepLearning.ai-Summary), summaries from all courses
-
-- [Krish Naik's complete DL course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi), if you get stuck and don't understand the concepts
-
-- [Krish Naik's complete ML course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
-
-- [Practical Machin Learning with Python](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v)
+- [GitHub Notes](https://github.com/mbadry1/DeepLearning.ai-Summary)
 
 - [TA Deep Learning Notes](https://yiqiaoyin.files.wordpress.com/2018/02/deep-learning-notes.pdf), haven't read actually
 
-- [Beautifully drawn DL notes](https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng)
+- [Drawn DL notes](https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng)
 
 - [TensorFlow Turorial](https://www.tensorflow.org/guide/tensor), what is the tensor?
 
 
 ## General Resources🔗
 - [TensorFlow Resources for Learning ML](https://www.tensorflow.org/resources/learn-ml)
+
+- [Krish Naik's complete DL course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi), if you get stuck and don't understand the concepts
+
+- [Krish Naik's complete ML course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
+
+- [Practical Machine Learning with Python](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v)
+
+- [Stanford Online](https://www.youtube.com/user/stanfordonline), awesome lectures by Andrew Ng at Stanford
 
 - [MIT Deep Learning](http://introtodeeplearning.com/)
 
@@ -123,3 +127,10 @@ Rustam_Z🚀, 18 October 2020
 —Elon Musk
 
 - [Machine Learning Engineering](https://t.me/progbook2/603) Andriy Burkov
+
+## Curiosity
+- Podcast with Andrew Ng about getting started in Deep Learning: https://youtu.be/1k37OcjH7BM
+
+- Andrew Ng Machine Learning Career Advice: https://youtu.be/hkagmGAu74Y
+
+- Andrew Ng - Career Advice/Reading Research Papers: https://youtu.be/733m6qBH-jI

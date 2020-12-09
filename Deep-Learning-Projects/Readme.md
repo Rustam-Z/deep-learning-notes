@@ -36,6 +36,10 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
 ### [Optimization methods from scratch](Optimization_Methods) 
 - Stochastic Gradient Descent, Mini-batch GD with momentum, Adam optimization
 
+- **Adam** is one of the most effective optimization algorithms for training neural networks. It combines ideas from RMSProp and Momentum
+
+- <img src="img/adam.png" width=500>
+
 - <img src="img/opt1.gif" width=300><img src="img/opt2.gif" width=300>
 
 ### [Sign Language Detector](TensorFlow)
@@ -69,3 +73,9 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
 
     - **Evaluate/Test** `preds = happyModel.evaluate(x = X_test, y = Y_test)`
 
+## ResNets
+- Convolutional block <br><img src="img/convblock_kiank.png" width=500>
+
+- Identity block 3 <br><img src="img/idblock3_kiank.png" width=500>
+
+- ResNet <br><img src="img/resnet_kiank.png" width=600>
