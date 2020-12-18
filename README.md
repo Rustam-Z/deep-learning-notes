@@ -107,6 +107,8 @@ The list of things you need for this particular specialization
 
 - https://ai.google/research/
 
+- https://ai.googleblog.com/
+
 
 ## Books📚
 - Daniel's recommendation - https://youtu.be/7R08MPXxiFQ
