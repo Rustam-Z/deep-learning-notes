@@ -4,6 +4,12 @@ By Rustam_Z🚀 | December 2, 2020
 
 Here you can find all projects I have made using Deep Learing & Neural Netowrks & CNN & TensorFlow
 
+## Highlighted Projects:
+- [Autonomous driving & Car detection](#Autonomous-driving-&-Car-detection)
+
+- [Face Recognition](#Face-Recognition)
+
+
 ### [Logistic Regression as a Neural Network](Logistic-Regression-as-a-Neural-Network)
 - Cat vs non-cat classification using logistic regression. You can see the architecture of model below:
 
@@ -73,9 +79,49 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
 
     - **Evaluate/Test** `preds = happyModel.evaluate(x = X_test, y = Y_test)`
 
-## ResNets
+### [ResNets](ReaNets)
 - Convolutional block <br><img src="img/convblock_kiank.png" width=500>
 
 - Identity block 3 <br><img src="img/idblock3_kiank.png" width=500>
 
 - ResNet <br><img src="img/resnet_kiank.png" width=600>
+
+### [Autonomous driving & Car detection](Car-detection-with-YOLO)
+- Implemented YOLO algorithms for detecting object. YOLO stands for 'You only look once'.
+
+- Used object detection on a car detection dataset
+
+- Dealed with bounding boxes
+
+- Summary for YOLO:
+  - Input image `(608, 608, 3)`
+  - The input image goes through a CNN, resulting in a `(19,19,5,85)` dimensional output.
+  - After flattening the last two dimensions, the output is a volume of shape `(19, 19, 425)`:
+    - Each cell in a `19x19` grid over the input image gives `425` numbers.
+    - `425 = 5 x 85` because each cell contains predictions for 5 boxes, corresponding to 5 anchor boxes, as seen in lecture.
+    - `85 = 5 + 80` where 5 is because `(pc,bx,by,bh,bw)(pc,bx,by,bh,bw)` has 5 numbers, and 80 is the number of classes we'd like to detect
+  - You then select only few boxes based on:
+    - Score-thresholding: throw away boxes that have detected a class with a score less than the threshold
+    - Non-max suppression: Compute the Intersection over Union and avoid selecting overlapping boxes
+  - This gives you YOLO's final output.
+
+
+### [Face Recognition](Face-Recognition)
+- Understood difference between Face verification & Face recognition
+
+- Model - FaceNet
+
+- Key points:
+  - Face verification solves an easier 1:1 matching problem; face recognition addresses a harder 1:K matching problem.
+  - The triplet loss is an effective loss function for training a neural network to learn an encoding of a face image.
+  - The same encoding can be used for verification and recognition. Measuring distances between two images' encodings allows you to determine whether they are pictures of the same person.
+
+- <img src="img/distance_kiank.png" width=500>
+
+- <img src="img/distance_matrix.png" width=500>
+
+
+### [Neural Style Transfer](Neural-Style-Transfer)
+- Implemented the neural style transfer algorithm
+- Generated novel artistic images using your algorithm
+- <img src="img/content_plus_style.png" width=500>
