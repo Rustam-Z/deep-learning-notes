@@ -1,6 +1,6 @@
 # Deep Learning Area
 
-Hello, if you are going to dive into deep learning, I would suggest that you first take a look at the [Resources section](#Resources) that I have prepared for you. And always remember why you started learning machine learning.
+Hello, if you are going to dive into deep learning, I would suggest you first take a look at the [Resources section](#Resources) that I have prepared for you. Good luck with your studies! Always remember why you started learning AI!
 
 Rustam_Z🚀, 18 October 2020
 
