@@ -2,17 +2,19 @@
 
 Rustam_Z🚀 | 25 November 2020
 
-- How to build a successful machine learning projects
-- How to prioritize the problem
-- ML strategy
-- Choose a correct train/dev/test split of your dataset
-- Human-level performance (Bayes error)
-- Error Analysis
-- Mismatched training and dev/test set
+    - How to build a successful machine learning projects
+    - How to prioritize the problem
+    - ML strategy
+    - Choose a correct train/dev/test split of your dataset
+    - Human-level performance (Bayes error)
+    - Error Analysis
+    - Mismatched training and dev/test set
 
-[Coursera Certificate](https://coursera.org/share/d6685d579c5a81f1473522edc4f2cf62)
+<a href="https://coursera.org/share/c06215d81b9248cfa4476f42aa785d2f">
+    <img src="media/certificate.png" width=500>
+</a>
 
-## Content
+## Contents:
 - Week 1
     - Introduction to ML strategy
         - [Why ML strategy](#Why-ML-strategy)

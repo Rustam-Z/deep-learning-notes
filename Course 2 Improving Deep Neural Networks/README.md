@@ -1,12 +1,11 @@
 # [Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization](https://www.coursera.org/learn/deep-neural-network)
 
-- Train/dev/test sets
-- Regularization, dropout technique, normalizing inputs, gradient checking
-- Optimization algos (mini-batch GD, GD with momentum, RMS, Adam optimization)
-- Hyperparameters tuning (logarithmic scale), batch normalization
-- Multiclass classification, TensorFlow
+    - Train/dev/test sets
+    - Regularization, dropout technique, normalizing inputs, gradient checking
+    - Optimization algos (mini-batch GD, GD with momentum, RMS, Adam optimization)
+    - Hyperparameters tuning (logarithmic scale), batch normalization
+    - Multiclass classification, TensorFlow
 
-## Coursera Certificate
 <a href="https://www.coursera.org/account/accomplishments/certificate/VZSUJ4L9ZEKJ">
     <img src="media/certificate.png" width=500>
 </a>

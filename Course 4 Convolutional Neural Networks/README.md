@@ -2,14 +2,19 @@
 
 Rustam_Z🚀 | 29 November 2020
 
-- Foundations of Convolutional Neural Networks (padding, striding, polling, FC, CNN example)
+    - Foundations of Convolutional Neural Networks (padding, striding, polling, FC, CNN example)
 
-- Deep convolutional models (LeNet-5, AlexNet, VGG, ResNet, Inception)
+    - Deep convolutional models (LeNet-5, AlexNet, VGG, ResNet, Inception)
 
-- Object detection
+    - Object detection
 
-- Special applications: Face recognition & Neural style transfer
+    - Special applications: Face recognition & Neural style transfer
 
+<a href="https://coursera.org/share/074f75c93365d8c1847cf3db4db30f38">
+    <img src="img/certificate.png" width=500>
+</a>
+
+## References:
 - About CNN briefly: https://towardsdatascience.com/convolutional-neural-network-17fb77e76c05
 
 - https://cs231n.github.io/convolutional-networks/
@@ -18,7 +23,7 @@ Rustam_Z🚀 | 29 November 2020
 
 - ResNet: https://towardsdatascience.com/hitchhikers-guide-to-residual-networks-resnet-in-keras-385ec01ec8ff
 
-## Contents
+## Contents:
 - [WEEK 1 - Foundations of Convolutional Neural Networks](#WEEK-1:-Convolutional-Neural-Networks)
 
     - [Computer vision](#Computer-Vision)
