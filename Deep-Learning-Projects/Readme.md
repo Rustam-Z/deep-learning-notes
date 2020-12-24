@@ -5,9 +5,17 @@ By Rustam_Z🚀 | December 2, 2020
 Here you can find all projects I have made using Deep Learing & Neural Netowrks & CNN & TensorFlow
 
 ## Highlighted Projects:
+- [Cat / Not-cat](#Image-Classification-with-NN)
+
+- [Sign language classifier](#CNN-App)
+
+- [Emotion Tracking](#Emotion-Tracking)
+
 - [Autonomous driving & Car detection](#Autonomous-driving-&-Car-detection)
 
 - [Face Recognition](#Face-Recognition)
+
+- [Art generation](#Neural-Style-Transfer)
 
 
 ### [Logistic Regression as a Neural Network](Logistic-Regression-as-a-Neural-Network)
@@ -31,6 +39,7 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
         4. Update parameters (using parameters, and grads from backprop) 
   - Use trained parameters to predict labels
 - <img src="img/final outline.png" width=300>
+- **Backpropagation** is used to compute the derivatives with respect to the cost to update the parameters: <br><img src="img/backprop.png" width=400>
 
 ### [Image Classification with NN](Image-Classification-with-NN)
 - Cat vs non-cat classification using 2-layer & L-layer NN
@@ -48,13 +57,13 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
 
 - <img src="img/opt1.gif" width=300><img src="img/opt2.gif" width=300>
 
-### [Sign Language Detector](TensorFlow)
-- First project using TensorFlow
+### [Tensorflow](TensorFlow)
+- Building your first neural network in tensorflow
 
-- <img src="img/hands.png" width=400>
+- Sign language classifier
 
-### [Convolutional Neural Networks: Application](CNNs-App)
-- Sign language using the TensorFlow CNN model
+### [CNN App](CNNs-App)
+- Sign language using the TensorFlow CNN model <br><img src="img/hands.png" width=400>
 
 - Info: training set - 95% accuracy, test set - 80% accuracy
 
@@ -105,21 +114,16 @@ Here you can find all projects I have made using Deep Learing & Neural Netowrks 
     - Non-max suppression: Compute the Intersection over Union and avoid selecting overlapping boxes
   - This gives you YOLO's final output.
 
-
 ### [Face Recognition](Face-Recognition)
 - Understood difference between Face verification & Face recognition
-
 - Model - FaceNet
-
 - Key points:
   - Face verification solves an easier 1:1 matching problem; face recognition addresses a harder 1:K matching problem.
   - The triplet loss is an effective loss function for training a neural network to learn an encoding of a face image.
   - The same encoding can be used for verification and recognition. Measuring distances between two images' encodings allows you to determine whether they are pictures of the same person.
 
 - <img src="img/distance_kiank.png" width=500>
-
 - <img src="img/distance_matrix.png" width=500>
-
 
 ### [Neural Style Transfer](Neural-Style-Transfer)
 - Implemented the neural style transfer algorithm
