@@ -1,8 +1,10 @@
-# [Sequence Models](https://www.coursera.org/learn/nlp-sequence-models) (NLP)
+# [Sequence Models](https://www.coursera.org/learn/nlp-sequence-models)
 
 Rustam_Z🚀 | 20 December 2020
 
     - RNN, LSTM, BRNN, GRU
+    - Natural Language Processing & Word Embeddings (Word2vec & GloVe)
+    - Sequence models & Attention mechanism
 
 ## References:
 - [RNN Notes](https://github.com/mbadry1/DeepLearning.ai-Summary)
@@ -27,9 +29,10 @@ Rustam_Z🚀 | 20 December 2020
 
     - [Lab 1: Building RNN](#Lab:-Building-RNN) (RNN, LSTM implementations step-by-step)
 
-- [WEEK 2](#WEEK-2)
+- [WEEK 2](#WEEK-2) (NLP & Word Embeddings)
+    - Word2vec & GloVe
 
-- [WEEK 3](#WEEK-3)
+- [WEEK 3](#WEEK-3) (Sequence models & Attention mechanism)
 
 ## WEEK 1
 - Recurrent Neural Networks 
