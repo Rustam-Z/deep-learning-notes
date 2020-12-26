@@ -83,6 +83,8 @@ The list of things you need for this particular specialization
 
 - [Stanford Online](https://www.youtube.com/user/stanfordonline), awesome lectures by Andrew Ng at Stanford
 
+- [Stanford Engineering Deep Learning](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv)
+
 - [MIT Deep Learning](http://introtodeeplearning.com/)
 
 - [Google's ML Crash Course](https://developers.google.com/machine-learning/crash-course)
@@ -136,3 +138,4 @@ The list of things you need for this particular specialization
 - Andrew Ng Machine Learning Career Advice: https://youtu.be/hkagmGAu74Y
 
 - Andrew Ng - Career Advice/Reading Research Papers: https://youtu.be/733m6qBH-jI
+

@@ -29,10 +29,23 @@ Rustam_Z🚀 | 20 December 2020
 
     - [Lab 1: Building RNN](#Lab:-Building-RNN) (RNN, LSTM implementations step-by-step)
 
+    - [Lab 2: Character level language model (Dinosaurus Island)](Lab:-Character-level-language-model-(Dinosaurus-Island))
+
 - [WEEK 2](#WEEK-2) (NLP & Word Embeddings)
+    - Embedding words (vs one-shot vector)
+
     - Word2vec & GloVe
 
+    - Negative sampling
+
+    - [Lab: Operations on word vectors](#Lab:-Operations-on-word-vectors)
+
+    - [Lab: Emojify!](#Lab:-Emojify!)
+
 - [WEEK 3](#WEEK-3) (Sequence models & Attention mechanism)
+    - Various sequence to sequence architectures
+
+    - Speech recognition - Audio data
 
 ## WEEK 1
 - Recurrent Neural Networks 
@@ -97,6 +110,102 @@ Note, the *softmax** includes a dense layer and softmax:
 
 - Forward pass for LSTM: iterate this over this using a for-loop to process a sequence of T<sub>x</sub> inputs: <br><img src="img/LSTM_rnn.png" width=700>
 
+### Lab: Character level language model (Dinosaurus Island)
+- https://www.coursera.org/learn/nlp-sequence-models/ungradedLab/19hZX/lab
+- Skills:
+    - How to store text data for processing using an RNN
+    - How to synthesize data, by sampling predictions at each time step and passing it to the next RNN-cell unit
+    - How to build a character-level text generation recurrent neural network
+    - Why clipping the gradients is important
+
+- Model:
+    - Initialize parameters
+    - Run the optimization loop
+    - *Forward propagation* to compute the loss function
+    - *Backward propagation* to compute the gradients with respect to the loss function
+    - Clip the gradients to avoid exploding gradients
+    - Using the gradients, update your parameters with the gradient descent update rule.
+    - Return the learned parameters
+
+- Loop:
+    - forward pass
+    - cost computation
+    - backward pass
+    - parameter update
+
+### Lab: Music generation
+- Jazz generation using LSTM
+
 ## WEEK 2
+> Natural Language Processing & Word Embeddings
+
+### Introduction to Word Embeddings
+### Word Representation
+<img src="img/19.PNG" width=500><img src="img/20.PNG" width=500><img src="img/21.PNG" width=500>
+
+### Using word embeddings
+<img src="img/evolving-word-embeddings-fig-1.jpeg" width=700>
+
+### Properties of word embeddings
+<img src="img/22.PNG" width=500><img src="img/23.PNG" width=500><img src="img/24.PNG" width=500>
+
+### Embedding matrix
+- <img src="img/25.PNG" width=500>
+- In practice multiplying to zeros is not used. And here Word2vec & GloVe are coming.
+
+### Learning Word Embeddings: Word2vec & GloVe
+### Learning word embeddings
+https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/5-%20Sequence%20Models#learning-word-embeddings
+
+### Word2Vec
+- Simple and comfortably more efficient way to learn types of embeddings
+
+- Randomly choose a target word
+
+- <img src="img/26.PNG" width=500><img src="img/27.PNG" width=500><img src="img/28.PNG" width=500>
+
+### Negative Sampling
+<img src="img/29.PNG" width=500><img src="img/30.PNG" width=500><img src="img/31.PNG" width=500>
+
+### GloVe word vectors
+<img src="img/32.PNG" width=500><img src="img/33.PNG" width=500><img src="img/34.PNG" width=500>
+
+### Applications using Word Embeddings
+### Sentiment Classification
+
+### Debiasing word embeddings
+- Gender, ethics specific
+
+- Doctor --> Man & Woman
+
+### Lab: Operations on word vectors
+- https://www.coursera.org/learn/nlp-sequence-models/ungradedLab/SRDFh/lab
+- **Goal**:
+    - Load pre-trained word vectors, and measure similarity using cosine similarity
+
+    - Use word embeddings to solve word analogy problems such as Man is to Woman as King is to __.
+
+    - Modify word embeddings to reduce their gender bias
+
+- **Embedding vectors versus one-hot vectors**
+    - One-hot vectors do not do a good job of capturing the level of similarity between words (every one-hot vector has the same Euclidean distance from any other one-hot vector).
+    - Embedding vectors such as GloVe vectors provide much more useful information about the meaning of individual words.
+    - Implemented `Cosine similarity`
+
+- **Summary**:
+    - Cosine similarity is a good way to compare the similarity between pairs of word vectors.
+    - Note that L2 (Euclidean) distance also works.
+    - For NLP applications, using a pre-trained set of word vectors is often a good way to get started.
+
+- **Debiasing word vectors**
+
+### Lab: Emojify!
+- https://www.coursera.org/learn/nlp-sequence-models/ungradedLab/HxLGO/lab
+- LSTM, word embeddings
 
 ## WEEK 3
+### Sequence models & Attention mechanism
+
+### Various sequence to sequence architectures
+
+### Speech recognition - Audio data
