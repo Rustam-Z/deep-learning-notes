@@ -190,4 +190,12 @@ https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/5-%20Sequence%20M
 - Bilingual evaluation undestudy
 - How good is the machine translation?
 
+#### Attention Model
+<img src="img/38.PNG" width=500><img src="img/39.PNG" width=500><img src="img/40.PNG" width=500>
+
 ### Speech recognition - Audio data
+#### Speech recognition
+- https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/5-%20Sequence%20Models#speech-recognition
+
+#### Trigger Word Detection
+- Hey Goodle, Alexa....

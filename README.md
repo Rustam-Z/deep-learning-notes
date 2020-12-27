@@ -37,8 +37,10 @@ Rustam_Z🚀, 18 October 2020
   - Special applications: Face recognition & Neural style transfer
 
 ### [Sequence Models](https://www.coursera.org/learn/nlp-sequence-models)
-  - Recurrent Neural Networks (RNNs), LSTM, natural language processing (NLP)
-
+  - RNN, LSTM, BRNN, GRU
+  - Natural Language Processing & Word Embeddings (Word2vec & GloVe)
+  - Sequence models & Attention mechanism (Speech recognition)
+  
 ## Resources
 The list of resources you need for this particular specialization:
 - [In-depth deeplearning.ai specialization review](https://youtu.be/ICMtmjRg0-Y) - Daniel, ML engineer, describes about the specialization. The continuation is [here](https://youtu.be/LJZIqYlKsWo)
