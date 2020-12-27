@@ -1,5 +1,7 @@
 # [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
 
+Rustam_Z🚀 | 18 October 2020
+
     - Architecture of Neural Network
     - Logistic Regression
     - Cost function, Forward propagation, Backpropagation, Gradient descent

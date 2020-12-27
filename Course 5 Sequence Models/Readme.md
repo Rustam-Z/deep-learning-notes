@@ -11,6 +11,7 @@ Rustam_Z🚀 | 20 December 2020
 - https://towardsdatascience.com/learn-how-recurrent-neural-networks-work-84e975feaaf7
 - LSTM http://colah.github.io/posts/2015-08-Understanding-LSTMs/
 - Difference between RNN, LSTM, GRU: https://stats.stackexchange.com/questions/222584/difference-between-feedback-rnn-and-lstm-gru
+- https://medium.com/analytics-vidhya/machine-translation-encoder-decoder-model-7e4867377161
 
 ## Contents:
 - [WEEK 1](#WEEK-1)
@@ -21,15 +22,18 @@ Rustam_Z🚀 | 20 December 2020
     - Deep RNNs
     - [Lab 1: Building RNN](#Lab:-Building-RNN) (RNN, LSTM implementations step-by-step)
     - [Lab 2: Character level language model (Dinosaurus Island)](Lab:-Character-level-language-model-(Dinosaurus-Island))
+
 - [WEEK 2](#WEEK-2) (NLP & Word Embeddings)
     - Embedding words (vs one-shot vector)
     - Word2vec & GloVe
     - Negative sampling
     - [Lab: Operations on word vectors](#Lab:-Operations-on-word-vectors)
     - [Lab: Emojify!](#Lab:-Emojify!)
+
 - [WEEK 3](#WEEK-3) (Sequence models & Attention mechanism)
     - Various sequence to sequence architectures
     - Speech recognition - Audio data
+    - [Lab: Neural Machine Translation](#Lab:-Neural-Machine-Translation)
 
 ## WEEK 1
 > Recurrent Neural Networks 
@@ -198,4 +202,15 @@ https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/5-%20Sequence%20M
 - https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/5-%20Sequence%20Models#speech-recognition
 
 #### Trigger Word Detection
+- Trigger word detection is the technology that allows devices like Amazon Alexa, Google Home, Apple Siri, and Baidu DuerOS to wake up upon hearing a certain word
 - Hey Goodle, Alexa....
+
+### Lab: Neural Machine Translation
+- https://www.coursera.org/learn/nlp-sequence-models/ungradedLab/fGZcT/lab
+- Built a Neural Machine Translation (NMT) model to translate human-readable dates ("25th of June, 2009") into machine-readable dates ("2009-06-25").
+- Done this using an attention model, one of the most sophisticated sequence-to-sequence models.
+- Atention model: <br><img src="img/attn_model.png" width=500>
+- <img src="img/attn_mechanism.png" width=500>
+
+### Lab: Trigger Word Detection
+- https://www.coursera.org/learn/nlp-sequence-models/ungradedLab/zoqcq/lab

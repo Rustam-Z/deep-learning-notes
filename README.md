@@ -5,6 +5,9 @@ Hello, if you are going to dive into deep learning, I would suggest you first ta
 Rustam_Z🚀, 18 October 2020
 
 ### deeplearning.ai [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
+<a href="https://coursera.org/share/16d9aeb7df22e23f24b77964248d8eac">
+  <img src="Coursera EG2HHC895JHE-1.png" width=600>
+</a>
 
 ### [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
   - Architecture of Neural Network

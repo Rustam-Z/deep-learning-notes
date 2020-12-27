@@ -10,14 +10,14 @@
     <img src="media/certificate.png" width=500>
 </a>
 
-## Labs
+## Labs:
 - [Initialization](https://www.coursera.org/learn/deep-neural-network/ungradedLab/p81Pk/initialization), implementing random initialization, [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/p81Pk/lab)
 - [Regularization](https://www.coursera.org/learn/deep-neural-network/ungradedLab/xioPP/regularization), implementing regularization, understand what is the regularization, [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/xioPP/lab)
 - [Gradient Checking](https://www.coursera.org/learn/deep-neural-network/ungradedLab/gjSPw/gradient-checking), [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/gjSPw/lab)
 - [Optimization](https://www.coursera.org/learn/deep-neural-network/ungradedLab/hMnJ2/optimization), Adam & RMS prop, mini-batch GD, GD with momemtum, [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/hMnJ2/lab)
 - [TensorFlow](#https://www.coursera.org/learn/deep-neural-network/ungradedLab/9xqJ2/tensorflow), hands detection, [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/9xqJ2/lab)
 
-## Content
+## Contents:
 - [Week 1: Practical aspects of Deep Learning](#Week-1:-Practical-aspects-of-Deep-Learning)
     - Setting up your Machine Learning Application
         - [Train/Dev/Test sets](#Train/Dev/Test-sets)
