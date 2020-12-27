@@ -4,7 +4,7 @@ Rustam_Z🚀 | 20 December 2020
 
     - RNN, LSTM, BRNN, GRU
     - Natural Language Processing & Word Embeddings (Word2vec & GloVe)
-    - Sequence models & Attention mechanism
+    - Sequence models & Attention mechanism (Speech recognition)
 
 ## References:
 - [RNN Notes](https://github.com/mbadry1/DeepLearning.ai-Summary)
@@ -48,8 +48,8 @@ Rustam_Z🚀 | 20 December 2020
     - Speech recognition - Audio data
 
 ## WEEK 1
-- Recurrent Neural Networks 
-- LSTMs, GRUs, Bidirectional RNNs
+> Recurrent Neural Networks 
+> LSTMs, GRUs, Bidirectional RNNs
 Applications: speech recognition, musics generation, machine traslation, name entity recognition...
 
 ### Notation
@@ -204,8 +204,26 @@ https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/5-%20Sequence%20M
 - LSTM, word embeddings
 
 ## WEEK 3
-### Sequence models & Attention mechanism
+> Sequence models & Attention mechanism
 
 ### Various sequence to sequence architectures
+#### Basic Models
+- https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/5-%20Sequence%20Models#basic-models
+
+#### Picking the most likely sentence
+- Language model vs Machine translation model
+
+- https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/5-%20Sequence%20Models#picking-the-most-likely-sentence
+
+#### Beam Search
+<img src="img/35.PNG" width=500><img src="img/36.PNG" width=500><img src="img/37.PNG" width=500>
+
+#### Refinements to Beam Search
+https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/5-%20Sequence%20Models#refinements-to-beam-search
+
+#### Bleu Score
+- Bilingual evaluation undestudy
+
+- How good is the machine translation?
 
 ### Speech recognition - Audio data

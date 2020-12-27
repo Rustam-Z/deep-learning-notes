@@ -1,13 +1,15 @@
 # [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
+  
+  - Architecture of Neural Network
+  - Logistic Regression
+  - Cost function, Forward propagation, Backpropagation, Gradient descent
+  - Artificial Neural Network
+  - Logistic Regression vs NN, Activation fanction, L-layer NN
+  - [General Methodology](#General-Methodology)
 
-- Logistic Regression
-- Cost function, Forward propagation, Backpropagation, Gradient descent
-- Artificial Neural Network
-- Logistic Regression vs NN, Activation fanction, L-layer NN
-- [General Methodology](#General-Methodology)
-
-## Coursera Certificate
-<img src="media/certificate.jpg" width=500>
+<a href="https://coursera.org/share/d905ed852ae07ccd68691bf70d80cacb">
+  <img src="media/certificate.jpg" width=500>
+</a>
 
 ## Labs
 - [Logistic Regression with a Neural Network mindset](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/63Vsy/logistic-regression-with-a-neural-network-mindset), implementing logistic regression, [lab code](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/63Vsy/lab)
