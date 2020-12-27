@@ -1,11 +1,11 @@
 # [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
-  
-  - Architecture of Neural Network
-  - Logistic Regression
-  - Cost function, Forward propagation, Backpropagation, Gradient descent
-  - Artificial Neural Network
-  - Logistic Regression vs NN, Activation fanction, L-layer NN
-  - [General Methodology](#General-Methodology)
+
+    - Architecture of Neural Network
+    - Logistic Regression
+    - Cost function, Forward propagation, Backpropagation, Gradient descent
+    - Artificial Neural Network
+    - Logistic Regression vs NN, Activation fanction, L-layer NN
+    - General Methodology
 
 <a href="https://coursera.org/share/d905ed852ae07ccd68691bf70d80cacb">
   <img src="media/certificate.jpg" width=500>
@@ -13,24 +13,18 @@
 
 ## Labs
 - [Logistic Regression with a Neural Network mindset](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/63Vsy/logistic-regression-with-a-neural-network-mindset), implementing logistic regression, [lab code](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/63Vsy/lab)
-
 - [Planar data classification with a hidden layer](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/l8YCO/planar-data-classification-with-a-hidden-layer), NN with one hidden unit, back prop intuition, [lab code](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/l8YCO/lab)
-
 - [Building your Deep Neural Network: Step by Step](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/uBZOE/building-your-deep-neural-network-step-by-step), implementing all helper functions of NN, [lab code](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/uBZOE/lab)
-
 - [Deep Neural Network - Application](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/Aj5LG/deep-neural-network-application), cat & non-cat application with NN, [lab code](https://www.coursera.org/learn/neural-networks-deep-learning/ungradedLab/Aj5LG/lab)
 
 ##  Week 1: Introduction to Deep Learning
-
 ### Machine Learning vs Deep Learning
 - ANN (artificial neural networks), CNN, RNN
 - <img src="media/MLvsDL.png" width=400>
 
 ### What is neural network? 
 - [Lecture notes](notes/01_What_is_Neural_Network.pdf) 
-
 - NN is a powerful learning algorithm inspired by how the brain works. 
-
 - <img src="media/what-is-nn.png" width=400>
 
 ### Supervised Learning for Neural Networks
@@ -119,7 +113,6 @@
   ```
 - So we have:
   <img src="media/09.png">
-
 - Then from right to left we will calculate derivations compared to the result:
 
   ```
@@ -129,7 +122,6 @@
   d(W2) = X2 * d(z)
   d(B)  = d(z)f
   ```
-
 - From the above we can conclude the logistic regression pseudo code:
 
   ```
@@ -156,59 +148,38 @@
   w2 = w2 - alpha * dw2
   b = b - alpha * db
   ```
-
 - The above code should run for some iterations to minimize error.
-
 - So there will be two inner loops to implement the logistic regression.
-
 - Vectorization is so important on deep learning to reduce loops. In the last code we can make the whole loop in one step using vectorization!
 
-
 ### Vectorization
-
 - `for-loops` are slow. Thats why we need vectorization to get rid of some of our for loops.
-
 - `a=random.rand(1000000) b=random.rand(1000000)` - NumPy library `numpy.dot(a, b)` function is using vectorization by default.
-
 - The vectorization can be done on CPU or GPU thought the SIMD operation. But its faster on GPU.
-
 - Whenever possible, avoid for-loops.
-
 - Most of the NumPy library methods are vectorized version.
 
-
 ### Vectorizing Logistic Regression
-
 - As an input we have a matrix `X` and its `[Nx, m]` and a matrix `Y` and its `[Ny, m]`.
-
 - We will then compute at instance `[z1,z2...zm] = W' * X + [b,b,...b]`. This can be written in python as:
 ```python
   Z = np.dot(W.T,X) + b    # Vectorization, then broadcasting, Z shape is (1, m)
   A = 1 / 1 + np.exp(-Z)   # Vectorization, A shape is (1, m)
 ``` 
-
 - Vectorizing Logistic Regression's Gradient Output
 ``` python
   dz = A - Y                  # Vectorization, dz shape is (1, m)
   dw = np.dot(X, dz.T) / m    # Vectorization, dw shape is (Nx, 1)
   db = dz.sum() / m           # Vectorization, dz shape is (1, 1)
 ```
-
 - <img src="media/06.png" width=400> <img src="media/05.png" width=400>
 
-
 ### Notes on Python and NumPy
-
 - Some tricks to eliminate all the strange bugs in the code:
-
 	- If you didn't specify the shape of a vector, it will take a shape of (m,) and the transpose operation won't work. You have to reshape it to (m, 1)
-
 	- Try to not use the rank one matrix in ANN
-
 	- Don't hesitate to use assert(a.shape == (5,1)) to check if your matrix shape is the required one.
-
 	- If you've found a rank one matrix try to run reshape on it.
-
 	```python
 	a = np.random.randn(5)    # Rank 1 array (DON'T USE)
 	assert(a.shape == (5, 1)) # checking the codition, if false AssertionError will be raised
@@ -217,30 +188,21 @@
 	c = np.random.randn(1, 5) # Row vector
 	c.shape 				  # Will output a shape (1, 5)
 	```
-
 - In NumPy, `obj.sum(axis = 0)` sums the columns while `obj.sum(axis = 1)` sums the rows.
-
 - In NumPy, `obj.reshape(1,4)` changes the shape of the matrix by broadcasting the values.	
-
 - Reshape is cheap in calculations so put it everywhere you're not sure about the calculations.
-
 - Broadcasting works when you do a matrix operation with matrices that doesn't match for the operation, in this case NumPy automatically makes the shapes ready for the operation by broadcasting the values.
-
 - In general principle of broadcasting. If you have an (m,n) matrix and you add(+) or subtract(-) or multiply(*) or divide(/) with a (1,n) matrix, then this will copy it m times into an (m,n) matrix (in case of sum). The same with if you use those operations with a (m , 1) matrix, then this will copy it n times into (m, n) matrix. And then apply the addition, subtraction, and multiplication of division element wise.
-
 - To Compute the derivative of `Sigmoid`:
 	```
 	s = sigmoid(x)
 	ds = s * (1 - s)       # Derivative  using calculus
 	```
-
 - To make an image of `(width,height,depth)` be a vector, use this:
 	```
 	v = image.reshape(image.shape[0]*image.shape[1]*image.shape[2], 1)  #reshapes the image.
 	```
-
 - Gradient descent converges faster after normalization of the input matrices.
-
 
 ### General Notes 1
 - The main steps for building a Neural Network are:
@@ -250,10 +212,8 @@
 		- Calculate current loss (forward propagation)
 		- Calculate current gradient (backward propagation)
 		- Update parameters (gradient descent)
-
 - Preprocessing the dataset is important.
 - Tuning the learning rate (which is an example of a "hyperparameter") can make a big difference to the algorithm.
-
 
 ## Shallow neural networks: Week 2
 > Learn to build a neural network with one hidden layer, using forward propagation and backpropagation.
@@ -267,7 +227,6 @@
   X3  /
   ```
     - <img src="media/08.png" width=400>
-
 - In neural networks with one layer we will have:
 
   ```
@@ -276,12 +235,10 @@
   X3  /
   ```
     - <img src="media/08b.png" width=400>
-
 - `X` is the input vector `(X1, X2, X3)`, and `Y` is the output variable `(1x1)`
 - NN is stack of logistic regression objects.
 
 ### Neural Network Representation
-
 - We will define the neural networks that has one hidden layer.
 - NN contains of input layers, hidden layers, output layers.
 - Hidden layer means we cant see that layers in the training set.
@@ -291,7 +248,6 @@
 - We are talking about 2 layers NN. The input layer isn't counted.
 
 ### Computing a Neural Network's Output
-
 - Equations of Hidden layers:
   - <img src="media/07.png" width=400>
 - Here are some informations about the last image:
@@ -308,7 +264,6 @@
     - `a2` is the result of the equation `a2 = sigmoid(z2)`, it has a shape of `(1,1)`
 
 ### Vectorizing across multiple examples
-
 - Pseudo code for **forward propagation** for the 2 layers NN:
 
   ```
@@ -318,7 +273,6 @@
     z[2, i] = W2*a[1, i] + b2   # shape of z[2, i] is (1,1)
     a[2, i] = sigmoid(z[2, i])  # shape of a[2, i] is (1,1)
   ```
-
 - Lets say we have `X` on shape `(Nx,m)`. So the new pseudo code:
 
   ```
@@ -327,7 +281,6 @@
   Z2 = W2A1 + b2    # shape of Z2 is (1,m)
   A2 = sigmoid(Z2)  # shape of A2 is (1,m)
   ```
-
 - If you notice always m is the number of columns.
 - In the last example we can call `X` = `A0`. So the previous step can be rewritten as:
 
@@ -346,44 +299,30 @@
 
 ### Activation fanction
 - https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0
-
 - So far we are using sigmoid, but in some cases other functions can be a lot better.
-
 - Sigmoid can lead us to gradient decent problem where the updates are so low.
-
 - Sigmoid activation function range is `[0,1] A = 1 / (1 + np.exp(-z))` # Where z is the input matrix
-
 - `Tanh` activation function range is `[-1,1]` (Shifted version of sigmoid function)
   - n NumPy we can implement Tanh using one of these methods: `A = (np.exp(z) - np.exp(-z)) / (np.exp(z) + np.exp(-z)) # Where z is the input matrix`
-
   - Or `A = np.tanh(z) # Where z is the input matrix`
-
 - It turns out that the `tanh` activation usually works better than `sigmoid` activation function for hidden units because the mean of its output is closer to zero, and so it centers the data better for the next layer.
-
 - `Sigmoid` or `Tanh` function disadvantage is that if the input is too small or too high, the slope will be near zero which will cause us the gradient decent problem.
-
 - One of the popular activation functions that solved the slow gradient decent is the RELU function. `RELU = max(0,z) # so if z is negative the slope is 0 and if z is positive the slope remains linear.`
-
 - So here is some basic rule for choosing activation functions, if your classification is between 0 and 1, use the output activation as sigmoid and the others as `RELU`.
-
 - `Leaky RELU `activation function different of RELU is that if the input is negative the slope will be so small. It works as RELU but most people uses RELU. `Leaky_RELU = max(0.01z,z) #the 0.01 can be a parameter for your algorithm.`
-
 - In NN you will decide a lot of choices like:
   - No. of hidden layers.
   - No. of neurons in each hidden layer.
   - Learning rate. (The most important parameter)
   - Activation functions.
   - And others..
-
 - It turns out there are no guide lines for that. You should try all activation functions for example.
-
 
 ### Why do you need non-linear activation functions?
 - If we removed the activation function from our algorithm that can be called linear activation function.
 - Linear activation function will output linear activations
   - Whatever hidden layers you add, the activation will be always linear like logistic regression (So its useless in a lot of complex problems)
 - You might use linear activation function in one place - in the output layer if the output is real numbers (regression problem). But even in this case if the output value is non-negative you could use RELU instead.
-
 
 ### Derivatives of activation functions
 - Derivation of Sigmoid activation function:
@@ -392,7 +331,6 @@ g(z)  = 1 / (1 + np.exp(-z))
 g'(z) = (1 / (1 + np.exp(-z))) * (1 - (1 / (1 + np.exp(-z))))
 g'(z) = g(z) * (1 - g(z))
 ```
-
 - Derivation of Tanh activation function:
 ```
 g(z)  = (e^z - e^-z) / (e^z + e^-z)
@@ -411,10 +349,8 @@ g'(z) = { 0.01  if z < 0
           1     if z >= 0 }                
 ```
 
-
 ### Gradient descent for Neural Networks
 - Gradient descent algorithm:
-
   - NN parameters:
     ```  
     n[0] = Nx
@@ -445,7 +381,6 @@ g'(z) = { 0.01  if z < 0
   A2 = Sigmoid(Z2)      # Sigmoid because the output is between 0 and 1
   ```
 - Backpropagation (derivations):
-
   ```  
   dZ2 = A2 - Y      # derivative of cost function we used * derivative of the sigmoid function
   dW2 = (dZ2 * A1.T) / m
@@ -467,15 +402,13 @@ g'(z) = { 0.01  if z < 0
   - <img src="media/08c.png" width=400>
   - <img src="media/08d.png" width=400> <img src="media/08e.png" width=400> 
   - <img src="media/08f.png" width=400>
-  
+
 
 ### Random Initialization
 - In logistic regression it wasn't important to initialize the weights randomly, while in NN we have to initialize them randomly.
-
 - If we initialize all the weights with zeros in NN it won't work (initializing bias with zero is OK):
   - all hidden units will be completely identical (symmetric) - compute exactly the same function
   - on each gradient descent iteration all the hidden units will always update the same
-
 - To solve this we initialize the W's with a small random numbers:
   ```
   W1 = np.random.randn((2,2)) * 0.01    # 0.01 to make it small enough
@@ -483,9 +416,7 @@ g'(z) = { 0.01  if z < 0
   ```
 
 - We need small values because in `sigmoid` (or `tanh`), for example, if the weight is too large you are more likely to end up even at the very start of training with very large values of Z. Which causes your `tanh` or your `sigmoid` activation function to be saturated, thus slowing down learning. If you don't have any `sigmoid` or `tanh` activation functions throughout your neural network, this is less of an issue.
-
 - Constant `0.01` is alright for 1 hidden layer networks, but if the NN is deep this number can be changed but it will always be a small number.
-
 
 ### General Notes 2
 - The general methodology to build a Neural Network is to:
@@ -500,7 +431,6 @@ g'(z) = { 0.01  if z < 0
 
 ## Deep Neural Networks: Week 3
 > Understand the key computations underlying deep learning, use them to build and train deep neural networks, and apply it to computer vision. Build and train a deep L-layer Neural Network.
-
 
 ### Deep L-layer neural network
 - Shallow NN is a NN with one (Logisic Regression) or two layers.
@@ -528,7 +458,6 @@ g'(z) = { 0.01  if z < 0
   z[l] = W[l]a[l-1] + b[l]
   a[l] = g[l]](a[l])
   ```
-
 - Forward propagation general rule for `m` inputs:
 
   ```
@@ -539,14 +468,12 @@ g'(z) = { 0.01  if z < 0
 - We can't compute the whole layers forward propagation without a for loop so its OK to have a for loop here.
 - The dimensions of the matrices are so important you need to figure it out.
 
-
 ### Getting your matrix dimensions right
 - The best way to debug your matrices dimensions is by a pencil and paper.
 - Dimension of `W` is `(n[l],n[l-1])`. Can be thought by right to left.
 - Dimension of `b` is `(n[l],1)`
 - `dw` has the same shape as `W`, as well as `db` is the same shape as `b`
 - Dimension of `Z[l]`, `A[l]`, `dZ[l]`, and `dA[l]` are `(n[l],m)`
-
 
 ### Why deep representations?
 - Why deep NN works well, we will discuss this question in this section.
@@ -560,7 +487,6 @@ g'(z) = { 0.01  if z < 0
   - <img src="media/14.png" width=400>
 - When starting on an application don't start directly by dozens of hidden layers. Try the simplest solutions (e.g. Logistic Regression), then try the shallow neural network and so on.
 
-
 ### Building blocks of deep neural networks
 - Forward and back propagation for a layer l:
   - <img src="media/15.png" width=400>
@@ -569,19 +495,15 @@ g'(z) = { 0.01  if z < 0
 - Deep NN blocks:
   - <img src="media/16.png" width=400>
 
-
 ### Forward and Backward Propagation
 - Pseudo code for forward propagation for layer `l`:
-
   ```
   Input  A[l-1]
     Z[l] = W[l]A[l-1] + b[l]
     A[l] = g[l](Z[l])
   Output A[l], cache(Z[l])
   ```
-
 - Pseudo  code for backpropagation for layer `l`:
-
   ```
   Input da[l], caches
     dZ[l] = dA[l] * g'[l](Z[l])
@@ -590,13 +512,10 @@ g'(z) = { 0.01  if z < 0
     dA[l-1] = w[l].T * dZ[l]            # The multiplication here are a dot product.
   Output dA[l-1], dW[l], db[l]
   ```
-
 - If we have used our loss function then:
-
   ```
   dA[L] = (-(y/a) + ((1-y)/(1-a)))
   ```
-
 
 ### Parameters vs Hyperparameters
 - Main parameters of the NN is `W` and `b`
@@ -611,7 +530,6 @@ g'(z) = { 0.01  if z < 0
 - On the next course we will see how to optimize hyperparameters.
 
 ### What does this have to do with the brain
-
 - The analogy that "It is like the brain" has become really an oversimplified explanation.
 - There is a very simplistic analogy between a single logistic unit and a single neuron in the brain.
 - No human today understand how a human brain neuron works.
@@ -627,9 +545,7 @@ g'(z) = { 0.01  if z < 0
     parameter['W' + str(i)] = np.random.randn(layer_dims[i], layer_dims[i-1]) * 0.01
     parameter['b' + str(i)] = np.random.randn(layer_dims[i], 1) * 0.01
   ```
-
 - During `forward propagation`, in the forward function for a layer ll you need to know what is the activation function in a layer (Sigmoid, tanh, ReLU, etc.). During `backpropagation`, the corresponding backward function also needs to know what is the activation function for layer ll, since the gradient depends on i
-
 
 ## General Notes 3
 - How to build a neural network?
@@ -639,7 +555,6 @@ g'(z) = { 0.01  if z < 0
     - We give you the `ACTIVATION` function (`relu/sigmoid`).
     - Combine the previous two steps into a new `[LINEAR->ACTIVATION]` forward function.
     - Stack the `[LINEAR->RELU]` forward function `L-1` time (for layers 1 through L-1) and add a `[LINEAR->SIGMOID]` at the end (for the final layer  LL ). This gives you a new L_model_forward function. 
-
   - Compute the loss.  
   - Implement the backward propagation module (denoted in red in the figure below).
     - Complete the `LINEAR` part of a layer's backward propagation step.
@@ -647,8 +562,7 @@ g'(z) = { 0.01  if z < 0
     - Combine the previous two steps into a new `[LINEAR->ACTIVATION]` backward function.
     - Stack `[LINEAR->RELU]` backward `L-1` times and add `[LINEAR->SIGMOID]` backward in a new L_model_backward function
 
-    <img src="media/final outline.png" width=500>
-
+    <br><img src="media/final outline.png" width=500>
 
 ## General Methodology
 - As usual you will follow the Deep Learning methodology to build the model:

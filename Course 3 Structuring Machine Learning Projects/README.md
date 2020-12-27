@@ -18,52 +18,32 @@ Rustam_Z🚀 | 25 November 2020
 - Week 1
     - Introduction to ML strategy
         - [Why ML strategy](#Why-ML-strategy)
-
         - [Orthogonalization](#Orthogonalization)
-
     - Setting up your goal
         - [Single number evaluation metric](#Single-number-evaluation-metric)
-
         - [Satisficing and Optimizing metric](#Satisficing-and-Optimizing-metric)
-
         - [Train/dev/test distributions](#Train/dev/test-distributions)
-
         - [Size of the dev and test sets](#Size-of-the-dev-and-test-sets)
-
         - [When to change dev/test sets and metrics](#When-to-change-dev-test-sets-and-metrics)
-
     - Comparing to human-level performance
         - [Why human level performance](#Why-human-level-performance)
-
         - [Avoidable bias](#Avoidable-bias)
-
         - [Surpassing human-level performance](#Surpassing-human-level-performance)
-
         - [Improving your model performance](#Improving-your-model-performance) (summary)
-
     - [Bird recognition](Bird_recognition_in_the_city_of_Peacetopia.pdf) (case study)
-
 - Week 2
     - Error Analysis
         - Carrying out error analysis
-
         - Cleaning up incorrectly labeled data
-
         - Build your first system quickly, then iterate
-
     - Mismatched training and dev/test set
         - Training and testing on different distributions
-
         - Bias and Variance with mismatched data distributions
-
     - Learning from multiple tasks
         - Transfer learning
-
     - End-to-end deep learning
         - What is end-to-end deep learning?
-
         - Whether to use end-to-end deep learning
-
     - [Autonomous driving](Autonomous_driving.pdf) (case study)
 
 ## Week 1: Introduction to ML strategy
@@ -86,17 +66,13 @@ Rustam_Z🚀 | 25 November 2020
 
 ### Train/dev/test distributions
 [Supplemental notes](Training_development_and_test_distributions.pdf)
-
-<img src="media/06.PNG" width=500> <img src="media/07.PNG" width=500> <img src="media/08.PNG" width=500>
-
+<br><img src="media/06.PNG" width=500> <img src="media/07.PNG" width=500> <img src="media/08.PNG" width=500>
 - Setting up the `training`, `development` and `test` sets have a huge impact on productivity. It is important to choose the `development` and `test` sets from the **same distribution** and it must be taken randomly from all the data.
-
 - Guideline: Choose a `development` set and `test` set to reflect data you expect to get in the future and consider
 important to do well.
 
 ### Size of the dev and test sets
 [Supplemental notes](Size_of_the_development_and_test_sets.pdf)
-
 <img src="media/09.PNG" width=500> <img src="media/10.PNG" width=500> <img src="media/11.PNG" width=500>
 
 ### When to change dev/test sets and metrics

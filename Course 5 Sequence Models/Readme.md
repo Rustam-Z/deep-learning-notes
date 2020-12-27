@@ -8,43 +8,27 @@ Rustam_Z🚀 | 20 December 2020
 
 ## References:
 - [RNN Notes](https://github.com/mbadry1/DeepLearning.ai-Summary)
-
 - https://towardsdatascience.com/learn-how-recurrent-neural-networks-work-84e975feaaf7
-
 - LSTM http://colah.github.io/posts/2015-08-Understanding-LSTMs/
-
 - Difference between RNN, LSTM, GRU: https://stats.stackexchange.com/questions/222584/difference-between-feedback-rnn-and-lstm-gru
 
 ## Contents:
 - [WEEK 1](#WEEK-1)
     - Recurrent Neural Networks (forward prop, BP)
-
     - Gated Recurrent Unit (GRU) 
-
     - Long Short Term Memory (LSTM)
-
     - Bidirectional RNN (remebers before-after)
-
     - Deep RNNs
-
     - [Lab 1: Building RNN](#Lab:-Building-RNN) (RNN, LSTM implementations step-by-step)
-
     - [Lab 2: Character level language model (Dinosaurus Island)](Lab:-Character-level-language-model-(Dinosaurus-Island))
-
 - [WEEK 2](#WEEK-2) (NLP & Word Embeddings)
     - Embedding words (vs one-shot vector)
-
     - Word2vec & GloVe
-
     - Negative sampling
-
     - [Lab: Operations on word vectors](#Lab:-Operations-on-word-vectors)
-
     - [Lab: Emojify!](#Lab:-Emojify!)
-
 - [WEEK 3](#WEEK-3) (Sequence models & Attention mechanism)
     - Various sequence to sequence architectures
-
     - Speech recognition - Audio data
 
 ## WEEK 1
@@ -78,36 +62,22 @@ Applications: speech recognition, musics generation, machine traslation, name en
 
 ### Lab: Building RNN
 - https://www.coursera.org/learn/nlp-sequence-models/ungradedLab/Jbfx1/lab
-
 - **Recurrent Neural Networks (RNN)** are very effective for Natural Language Processing and other sequence tasks because they have *"memory"*.
-
 - They can read inputs x<sup>⟨t⟩</sup> (such as words) one at a time, and remember some information/context through the hidden layer activations that get passed from one time-step to the next.
-
 -  This allows a unidirectional RNN to take information from the past to process later inputs.
-
 - **A bidirectional RNN** can take context from **both** the past and the future.
-
 - Notation:
     - Superscript [l] denotes an object associated with the  l<sup>th</sup>  layer.
-
     - Superscript (i) denotes an object associated with the  i<sup>th</sup> example.
-
     - Superscript ⟨t⟩ denotes an object at the t<sup>th</sup> time-step.
-
     - Subscript i denotes the i<sup>th</sup> entry of a vector.
-
     - a<sub>5</sub><sup>(2)[3]<4></sup> denotes the activation of the 2nd training example (2), 3rd layer [3], 4th time step , and 5th entry in the vector.
-
 - Forward propagation for the **basic Recurrent Neural Network**: <br><img src="img/RNN.png" width=500>
-
 - **Basic RNN cell**. Takes as input x<sup>⟨t⟩</sup> (current time-step's input data) and a<sup>⟨t−1⟩</sup> (previous hidden state containing information from the past), and outputs a<sup>⟨t⟩</sup> which is given to the next RNN cell and also used to predict ŷ<sup>⟨t⟩</sup>: <br><img src="img/rnn_step_forward.png" width=500>
-
 - A recurrent neural network (RNN) is a repetition of the RNN cell described above. The input sequence `x=(x⟨1⟩,x⟨2⟩,...,x⟨Tx⟩)` is carried over T<sub>x</sub> time steps. The network outputs `y=(y⟨1⟩,y⟨2⟩,...,y⟨Tx⟩)`:<br><img src="img/rnn_forward_sequence.png" width=700>
-
 - **Long Short-Term Memory (LSTM) network**. LSTM cell - tracks and updates a "cell state" or memory variable c<sup>⟨t⟩</sup> at every time-step, which can be different from a<sup>⟨t⟩</sup>.
 Note, the *softmax** includes a dense layer and softmax:
 <br><img src="img/LSTM.png" width=500>
-
 - Forward pass for LSTM: iterate this over this using a for-loop to process a sequence of T<sub>x</sub> inputs: <br><img src="img/LSTM_rnn.png" width=700>
 
 ### Lab: Character level language model (Dinosaurus Island)
@@ -117,7 +87,6 @@ Note, the *softmax** includes a dense layer and softmax:
     - How to synthesize data, by sampling predictions at each time step and passing it to the next RNN-cell unit
     - How to build a character-level text generation recurrent neural network
     - Why clipping the gradients is important
-
 - Model:
     - Initialize parameters
     - Run the optimization loop
@@ -126,7 +95,6 @@ Note, the *softmax** includes a dense layer and softmax:
     - Clip the gradients to avoid exploding gradients
     - Using the gradients, update your parameters with the gradient descent update rule.
     - Return the learned parameters
-
 - Loop:
     - forward pass
     - cost computation
@@ -175,16 +143,13 @@ https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/5-%20Sequence%20M
 
 ### Debiasing word embeddings
 - Gender, ethics specific
-
 - Doctor --> Man & Woman
 
 ### Lab: Operations on word vectors
 - https://www.coursera.org/learn/nlp-sequence-models/ungradedLab/SRDFh/lab
 - **Goal**:
     - Load pre-trained word vectors, and measure similarity using cosine similarity
-
     - Use word embeddings to solve word analogy problems such as Man is to Woman as King is to __.
-
     - Modify word embeddings to reduce their gender bias
 
 - **Embedding vectors versus one-hot vectors**
@@ -223,7 +188,6 @@ https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/5-%20Sequence%20M
 
 #### Bleu Score
 - Bilingual evaluation undestudy
-
 - How good is the machine translation?
 
 ### Speech recognition - Audio data

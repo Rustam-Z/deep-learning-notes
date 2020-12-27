@@ -12,90 +12,56 @@
 
 ## Labs
 - [Initialization](https://www.coursera.org/learn/deep-neural-network/ungradedLab/p81Pk/initialization), implementing random initialization, [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/p81Pk/lab)
-
 - [Regularization](https://www.coursera.org/learn/deep-neural-network/ungradedLab/xioPP/regularization), implementing regularization, understand what is the regularization, [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/xioPP/lab)
-
 - [Gradient Checking](https://www.coursera.org/learn/deep-neural-network/ungradedLab/gjSPw/gradient-checking), [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/gjSPw/lab)
-
 - [Optimization](https://www.coursera.org/learn/deep-neural-network/ungradedLab/hMnJ2/optimization), Adam & RMS prop, mini-batch GD, GD with momemtum, [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/hMnJ2/lab)
-
 - [TensorFlow](#https://www.coursera.org/learn/deep-neural-network/ungradedLab/9xqJ2/tensorflow), hands detection, [notebook](https://www.coursera.org/learn/deep-neural-network/ungradedLab/9xqJ2/lab)
-
 
 ## Content
 - [Week 1: Practical aspects of Deep Learning](#Week-1:-Practical-aspects-of-Deep-Learning)
     - Setting up your Machine Learning Application
         - [Train/Dev/Test sets](#Train/Dev/Test-sets)
-
         - [Bias/Variance](#Bias/Variance)
-
         - [Basic Recipe for ML (what to do if you have high bias/variance)](#Basic-Recipe-for-Machine-Learning)
-
     - Regularizing your neural network
         - [Regularization](#Regularization)
         - [Dropout regularization, understanding dropout](#Dropout-regularization)
         - [Other regularization methods](#Other-regularization-methods)
-
     - Setting up your optimization problem
         - [Normalizing inputs](#Normalizing-inputs)
-
         - [Vanishing/exploding gradients](#Vanishing/Exploding-gradients)
-
         - Weight Initialization for Deep Networks
-
         - [Numerical approximation of gradients](#Numerical-approximation-of-gradients)
-
         - [Gradient checking, implementation notes](#Gradient-checking-implementation-notes)
-
         - [General Notes: Dropout](#general-notes)
-
 - [Week 2: Optimization algorithms](#Week-2:-Optimization-algorithms)
     - [Mini-batch gradient descent](#Mini-batch-gradient-descent)
-
     - [Understanding mini-batch gradient descent](#Understanding-mini-batch-gradient-descent)
-
     - Exponentially weighted averages
-
     - [Gradient descent with momentum](#Gradient-descent-with-momentum)
-
     - [RMSprop](#RMSprop)
-
     - [Adam optimization algorithm](#Adam-optimization-algorithm)
-
     - [Learning rate decay](#Learning-rate-decay)
-
     - The problem of local optima (unlikely to get stuck, because of high dimensionality)
-
 - [Week 3: Hyperparameter tuning, Batch Normalization and Programming Frameworks](#Week-3)
     - Hyperparameter tuning
-
         - Tuning process
-
         - Using an appropriate scale to pick hyperparameters (use logarithmic scale)
-
         - Hyperparameters tuning in practice: Pandas vs. Caviar
-
     - Batch Normalization
-
         - [Normalizing activations in a network](#Normalizing-activations-in-a-network)
-
     - Multi-class classification
-
     - TensorFlow
 
-
 ## Week 1: Practical aspects of Deep Learning
-
 ### Train/Dev/Test sets
 - **Idea <-> Code <-> Experiment**, it's impossible to get all hyperparameters right on a new application from the first time.
-
 - Your data will be split into three parts:
     - Training set. (Has to be the largest set)
     - Hold-out cross validation set / Development or "dev" set.
     - Testing set.
 
 - You will try to build a model upon training set then try to optimize hyperparameters on dev set as much as possible. Then after your model is ready you try and evaluate the testing set.
-
 - If you have 10,000,000 examples, split as `98% train`, `1% dev`, `1% test`
 - The `dev` and `test` set should come from the same distribution
 
@@ -129,32 +95,24 @@
 
 ### Regularization
 - https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a
-
 - Adding regularization to NN will help it reduce variance (overfitting)
-
 - L1 matrix norm: `||W|| = Sum(|w[i,j]|)` # sum of absolute values of all w
-
 - L2 matrix norm: `||W||^2 = Sum(|w[i,j]|^2)` # sum of all w squared --> `||W||^2 = W.T * W` if W is a vector
-
 - Regularization for Logistic regression
     - Cost function is `J(w,b) = (1/m) * Sum(L(y(i),y'(i)))`
     - L1 regularization: `J(w,b) = (1/m) * Sum(L(y(i),y'(i))) + (lambda/2m) * Sum(|w[i]|)`
     - L2 regularization: `J(w,b) = (1/m) * Sum(L(y(i),y'(i))) + (lambda/2m) * Sum(|w[i]|^2)`
     - `lambda` is the regularization parameter (hyperparameter)
         - when you increase lambda, weights becoming smaller (closer to 0)
-
 - Regularization for neural network
     - Cost function is `J(W1, b1, ... WL, bL) = (1/m) * Sum(L(y(i),y'(i)))`
     - L2 regularization: `J(w,b) = (1/m) * Sum(L(y(i),y'(i))) + (lambda/2m) * Sum((||W[l]||^2)`
     - Back prop: `dw[l] = (from back propagation) + lambda/m * w[l]`
     - Wights: `w[l] = (1 - (learning_rate*lambda)/m) * w[l] - learning_rate * (from back propagation)`
-
 - *Weight decay* `(1 - (learning_rate*lambda)/m)` - a regularization technique (such as L2 regularization) that results in gradient descent shrinking the weights on every iteration.
-
 
 ### Dropout regularization
 - The *dropout regularization* eliminates some neurons/weights on each iteration based on a probability
-
 - 
     ``` 
     keep_prob = 0.8   # 0 <= keep_prob <= 1
@@ -201,7 +159,6 @@
     Y' = W[L] [1.5  0]^(L-1) X = 1.5^L 	# which will be very large
               [0  1.5]
     ```
-
 - If `W < I` (Identity matrix) the activation and gradients will `vanish`.
     ```
     if W[l] = [0.5  0]
@@ -212,14 +169,11 @@
 
 ### Weight Initialization for Deep Networks
 - A partial solution to the Vanishing / Exploding gradients in NN is better or more careful choice of the random initialization of weights
-
-- For `tanh` `np.random.rand(shape) * np.sqrt(1/n[l-1])`   
-
+- For `tanh()` `np.random.rand(shape) * np.sqrt(1/n[l-1])`   
 - For `ReLU` `np.random.rand(shape) * np.sqrt(2/n[l-1])`
 
 ### Numerical approximation of gradients
-- Gradient checking which tells you if implementation of backpropagation is correct.
-
+- radient checking which tells you if implementation of backpropagation is correct.
 - Use ONLY for DEBUGGING! Because it is slow than gradient descent
 - Gradient checking
     - Take `W[1], b[1], ... W[L], b[L]` and reshape into one big vector (theta)
@@ -252,9 +206,7 @@
 - Apply dropout both during forward and backward propagation.
 - During training time, divide each dropout layer by keep_prob to keep the same expected value for the activations. For example, if keep_prob is 0.5, then we will on average shut down half the nodes, so the output will be scaled by 0.5 since only the remaining half are contributing to the solution. Dividing by 0.5 is equivalent to multiplying by 2. Hence, the output now has the same expected value. You can check that this works even when keep_prob is other values than 0.5.
 
-
 ## Week 2: Optimization algorithms
-
 ### Mini-batch gradient descent
 <img src="media/04.PNG" width=500><img src="media/05.PNG" width=500>
 
@@ -263,7 +215,6 @@
 
 ### Gradient descent with momentum
 <img src="media/09.PNG" width=500><img src="media/10.PNG" width=500>
-
 - The momentum algorithm almost always works faster than standard gradient descent.
 
 ### RMSprop
@@ -275,10 +226,8 @@
 - Adam optimization simply puts RMSprop and momentum together!
 <img src="media/12.PNG" width=500><img src="media/13.PNG" width=500>
 
-
 ### Learning rate decay
 <img src="media/15.PNG" width=500><img src="media/16.PNG" width=500>
-
 
 ## Week 3
 - Hyperparameter tuning, Batch Normalization and Programming Frameworks

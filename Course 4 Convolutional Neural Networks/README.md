@@ -3,11 +3,8 @@
 Rustam_Z🚀 | 29 November 2020
 
     - Foundations of Convolutional Neural Networks (padding, striding, polling, FC, CNN example)
-
     - Deep convolutional models (LeNet-5, AlexNet, VGG, ResNet, Inception)
-
     - Object detection
-
     - Special applications: Face recognition & Neural style transfer
 
 <a href="https://coursera.org/share/074f75c93365d8c1847cf3db4db30f38">
@@ -16,76 +13,45 @@ Rustam_Z🚀 | 29 November 2020
 
 ## References:
 - About CNN briefly: https://towardsdatascience.com/convolutional-neural-network-17fb77e76c05
-
 - https://cs231n.github.io/convolutional-networks/
-
 - Types of Convolutions: https://towardsdatascience.com/types-of-convolutions-in-deep-learning-717013397f4d
-
 - ResNet: https://towardsdatascience.com/hitchhikers-guide-to-residual-networks-resnet-in-keras-385ec01ec8ff
 
 ## Contents:
 - [WEEK 1 - Foundations of Convolutional Neural Networks](#WEEK-1:-Convolutional-Neural-Networks)
-
     - [Computer vision](#Computer-Vision)
-
     - [Edge detection example](#Edge-Detection-Example)
-
     - [More edge detection](#More-Edge-Detection) vertical and horizontal edges detection
-
     - [Padding](#Padding)
-
     - [Strided convolution](#Strided-Convolutions)
-
     - [Convolutions over volumes](#Convolutions-Over-Volume)
-
     - [One layer of a convolutional network](#One-Layer-of-a-Convolutional-Network)
-
     - [Simple convolution network example](Simple-Convolutional-Network-Example)
-
     - [Pooling layers](#Pooling-Layers)
-
     - [CNN Example](#CNN-Example)
-
     - [Why Convolutions?](#Why-Convolutions?)
-
 - [WEEK 2 - Deep convolutional models: case studies](#Week-2)
     - Case studies
         - [Why look at case studies?](#Why-look-at-case-studies?)
-
         - [Classic Networks](#Classic-Networks)
-
         - [Residual Networks (ResNets)](#ResNets)
-
         - [Network in Network and 1 X 1 convolutions](#Networks-in-Networks-and-1x1-Convolutions)
-
         - [Inception Network](#Inception-Network)
-
     - Practical advices for using ConvNets
         - [Transfer learning](#Transfer-learning)
-
         - [Data augmentation](#Data-augmentation)
-
 - [WEEK 3 - Object detection](#WEEK-3:-Object-detection) | Detection algorithms
     - [Object localization](#Object-Localization)
-
     - [Landmark detection](#Landmark-Detection)
-
     - [Object detection](#Object-Detection)
-
     - [Convolutional Implementation of Sliding Windows](#Convolutional-Implementation-of-Sliding-Windows)
-
     - [Bounding Box Predictions](#Bounding-Box-Predictions)
-
     - [Non-max Suppression](#Non-max-Suppression)
-
     - [Anchor Boxes](#Anchor-Boxes)
-
     - [YOLO Algorithm](#YOLO-Algorithm)
-
 - [WEEK 4 - Face Recognition](#WEEK-4:-Face-Recognition)
     - [Face Recognition](#Face-Recognition)
         - [Triplet Loss](#Triplet-Loss)
-
     - [Neural Style Transfer](#Neural-Style-Transfer)
 
 ## WEEK 1: Convolutional Neural Networks
@@ -145,14 +111,11 @@ Rustam_Z🚀 | 29 November 2020
 ### Case studies
 ### Why look at case studies?
 - Some neural networks architecture that works well in some tasks can also work well in other tasks.
-
 - Here are some classical CNN networks:
     - **LeNet-5**
     - **AlexNet**
     - **VGG**
-
 - **ResNet** with 152 layers
-
 - **Inception** architecture by Google is a good example to apply
 
 ### Classic Networks
@@ -169,14 +132,11 @@ Rustam_Z🚀 | 29 November 2020
 ### Inception Network
 - ***Inception network morivation***
     <br><img src="img/38.PNG" width=500><img src="img/39.PNG" width=500><img src="img/40.PNG" width=500>
-
     - We could face the problem of computational cost. To overcome it we must use the 1*1 covolution.
-
     - https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks#inception-network-motivation
 
 - ***Inception Network***
 <br><img src="img/41.PNG" width=500><img src="img/42.PNG" width=500>
-
 - GoogleNet - https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks#inception-network-googlenet
 
 ### Practical advices for using ConvNets
@@ -186,16 +146,12 @@ Rustam_Z🚀 | 29 November 2020
 ### Data Augmentation
 - Mirroring the picture, random cropping, rotation, shearing
 <br><img src="img/43.PNG" width=500>
-
 - <img src="img/44.PNG" width=500>
-
 - https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks#data-augmentation
-
 - https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks#state-of-computer-vision
 
 ### General notes Quiz
 - Quiz analysis: https://www.programmersought.com/article/43173972595
-
 
 ##  WEEK 3: Object detection 
 > Learn how to apply your knowledge of CNNs to one of the toughest but hottest field of computer vision: Object detection.
@@ -209,13 +165,9 @@ Rustam_Z🚀 | 29 November 2020
 
 ### Object Localization
 - Classification with localization problem (one object). Detection is finding multiply objects.
-
 - <img src="img/45.PNG" width=500>
-
 - We will output `pc=1` if there is an object, the placement (`bx, by, bh, bw`), and the object in the picture (`1. 0, 0`)
-
 - If `pc=0` then other numbers are *don't-cares*
-
 - The lost function:
     ```
     L(y',y) = {
@@ -227,68 +179,47 @@ Rustam_Z🚀 | 29 November 2020
 
 ### Landmark Detection
 - Outputting some points from the piture is the **landmark detection**
-
 - `lx, ly` corners of eye, mouth, nose or finding the edge of the face
-
 - <img src="img/48.PNG" width=500>
 
 ### Object Detection
 - Cut up the picture and detect the object, we will use 'Sliding windows algorithm'.
-
 - **Sliding windows detection** - choose a region, stride and detect, then make a bigger region. For each region feed the Conv net and decide if it's a car or not.
-
 - SWD is very slow, high computational cost.
-
 - https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks#object-detection-1
 
 ### Convolutional Implementation of Sliding Windows
 - We can turn Fully Connected layers into Convolutional layers
-
 - <img src="img/49.PNG" width=500>
-
 - Convolution implementation of sliding windows: <br><img src="img/50.PNG" width=500>
-
 - <img src="img/51.PNG" width=500>
-
 - The weakness of the algorithm is that the position of the rectangle wont be so accurate. Maybe none of the rectangles is exactly on the object you want to recognize. <br><img src="img/53.png" width=500>
 
 ### Bounding Box Predictions
 - YOLO - You Only Look Once, developed in 2015
-
 - Take a picture, divide into grid cells, implement classification with localization for each grid cell
-
 - <img src="img/52.png" width=500><img src="img/54.png" width=500>
-
 - https://www.analyticsvidhya.com/blog/2018/12/practical-guide-object-detection-yolo-framewor-python/
-
 - How to Label images for YOLO https://cloudxlab.com/blog/label-custom-images-for-yolo/
 
 ### Intersection Over Union
 - Intersection Over Union is a function used to evaluate the object detection algorithm.
-
 - The higher the IOU the better is the accuracy. Usually `>0.5` or `>0.6`
-
 - <img src="img/55.PNG" width=500>
 
 ### Non-max Suppression
 - Non-max suppression helps to choose the best bounding box for the particular object.
-
 - <img src="img/57.PNG" width=500><img src="img/56.PNG" width=500>
 
 ### Anchor Boxes
 - For detecting multiple objects in one grid. You must define the number of boxes by hand.
-
 - https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/4-%20Convolutional%20Neural%20Networks#anchor-boxes
 
 ### YOLO Algorithm
 - https://towardsdatascience.com/object-detection-part1-4dbe5147ad0a
-
 - https://datascience.stackexchange.com/questions/26403/how-does-yolo-algorithm-detect-objects-if-the-grid-size-is-way-smaller-than-the
-
 - Receptive field in CNNs: https://medium.com/mlreview/a-guide-to-receptive-field-arithmetic-for-convolutional-neural-networks-e0f514068807
-
 - The algorithm runs a convolutional network on the entire image at the same time, and the way you've drawn it the network will output a tensor of shape 3x3xk where k is the number of features that it needs to represent the selected number of bounding boxes. Each one of these output neurons has a receptive field much larger than the box itself, meaning that the output neurons in the lower center can see the entire woman and the entire car. The output neurons in the lower right can see most or all of the car too, but it sees that the center of the car isn't in it's box so it knows it doesn't have to spit out a bounding box.
-
 - <img src="img/58.PNG" width=500><img src="img/59.PNG" width=500><img src="img/60.PNG" width=500>
 
 ### Quiz on Detection algorithms
@@ -302,7 +233,6 @@ Rustam_Z🚀 | 29 November 2020
 
 ### Face Recognition
 - Face recognition (identifies face) and liveness detection (supervised learning)
-
 - Face verification vs. face recognition:
     - Verification:
         - Input: image, name/ID. (1 : 1)
@@ -313,7 +243,6 @@ Rustam_Z🚀 | 29 November 2020
         - Get an input image
         - Output ID if the image is any of the K persons (or not recognized)
         - "who is this person?"
-
 - We can use a face verification system to make a face recognition system.
 
 ### One Shot Learning
@@ -321,11 +250,8 @@ Rustam_Z🚀 | 29 November 2020
 
 ### Siamese Network
 - The function of `d` is to input two faces and tell how similar or how different they are. A good way to do this is to use a **Siamese network**.
-
 - <img src="img/63.png" width=500><img src="img/64.png" width=500>
-
 - Use back propagation to tune the parameters
-
 -  But how do you actually define an objective function to make a neural network learn to do what we just discussed here? (triplet loss function)
 
 ### Triplet Loss
@@ -336,12 +262,10 @@ Rustam_Z🚀 | 29 November 2020
 
 ## Neural Style Transfer
 - Generating artwork
-
 - <img src="img/71.png" width=500>
 
 ### What are deep ConvNets learning?
 <img src="img/72.png" width=500><img src="img/73.png" width=500>
-
 - Deeper network detects more complex objects than shallow network
 
 ### Cost Function
