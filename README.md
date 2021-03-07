@@ -94,13 +94,14 @@ Highlighted resources:
 - [Grokking Deep Learning](https://t.me/progbook2/216)
 - [The Mechanics of Machine Learning](https://mlbook.explained.ai/)
 
-If you want to learn more, follow the list of books below:
+Must read books:
 - [Deep Learning with Python](http://faculty.neu.edu.cn/yury/AAI/Textbook/Deep%20Learning%20with%20Python.pdf)
 - [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://t.me/progbook2/457) 2<sup>nd</sup> edition
 - [Deep Learning](https://t.me/progbook/61), deeplearningbook.org, "Written by three experts in the field, Deep Learning is the only comprehensive book on the subject."
 —Elon Musk
 - [Python for Data Analysis](https://t.me/dsproglib/902) 2<sup>nd</sup> edition
 - [Machine Learning Engineering](https://t.me/progbook2/603) Andriy Burkov
+- [Machine Learning Yearning](https://github.com/Rustam-Z/deep-learning-notes/blob/main/andrew-ng-ml-book.pdf) Andrew Ng - After finishing this book, you will have a deep understanding of how to set technical direction for a machine learning project.
 
 ## Extra
 - [Podcast](https://youtu.be/1k37OcjH7BM) with Andrew Ng about getting started in Deep Learning
