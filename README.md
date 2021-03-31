@@ -93,6 +93,7 @@ Highlighted resources:
 - [The Hundred-Page Machine Learning Book](https://t.me/progbook2/121) Andriy Burkov
 - [Grokking Deep Learning](https://t.me/progbook2/216)
 - [The Mechanics of Machine Learning](https://mlbook.explained.ai/)
+- [TensorFlow CookBook](https://github.com/nfmcclure/tensorflow_cookbook)
 
 Must read books:
 - [Deep Learning with Python](http://faculty.neu.edu.cn/yury/AAI/Textbook/Deep%20Learning%20with%20Python.pdf)
