@@ -458,13 +458,13 @@ g'(z) = { 0.01  if z < 0
 
   ```
   z[l] = W[l]a[l-1] + b[l]
-  a[l] = g[l]](a[l])
+  a[l] = g[l]](z[l])
   ```
 - Forward propagation general rule for `m` inputs:
 
   ```
   Z[l] = W[l]A[l-1] + B[l]
-  A[l] = g[l](A[l])
+  A[l] = g[l](Z[l])
   ```
 - <img src="media/13.png" width=350>
 - We can't compute the whole layers forward propagation without a for loop so its OK to have a for loop here.
