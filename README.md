@@ -104,6 +104,7 @@ Must read books:
 - [Python for Data Analysis](https://t.me/dsproglib/902) 2<sup>nd</sup> edition
 - [Machine Learning Engineering](https://t.me/progbook2/603) Andriy Burkov
 - [Machine Learning Yearning](https://github.com/Rustam-Z/deep-learning-notes/blob/main/andrew-ng-ml-book.pdf) Andrew Ng - After finishing this book, you will have a deep understanding of how to set technical direction for a machine learning project.
+- [AI and Machine Learning for Coders (2020)](https://t.me/progbook2/593) - Laurence Moroney, deeplearning.ai TensorFlow Developer specialization instructor
 
 ## Extra
 - [Podcast](https://youtu.be/1k37OcjH7BM) with Andrew Ng about getting started in Deep Learning
