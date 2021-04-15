@@ -94,7 +94,8 @@ Highlighted resources:
 - [Grokking Deep Learning](https://t.me/progbook2/216)
 - [The Mechanics of Machine Learning](https://mlbook.explained.ai/)
 - [TensorFlow CookBook](https://github.com/nfmcclure/tensorflow_cookbook)
-- [Python Machine Learning](https://github.com/rasbt/python-machine-learning-book)
+- [*Python Machine Learning](https://github.com/rasbt/python-machine-learning-book)
+- [*Deep Learning for Coders with fastai and PyTorch (2020)](https://t.me/progbook2/359)
 
 Must read books:
 - [Deep Learning with Python](http://faculty.neu.edu.cn/yury/AAI/Textbook/Deep%20Learning%20with%20Python.pdf)
