@@ -81,7 +81,7 @@ Highlighted resources:
 ## Research
 - [OpenAI](https://openai.com/blog/tags/research/)
 - [Google DeepMind](https://deepmind.com/research)
-- [Microsoft Research]()https://www.microsoft.com/en-us/research/research-area/artificial-intelligence
+- [Microsoft Research](https://www.microsoft.com/en-us/research/research-area/artificial-intelligence)
 - [IBM Research](https://www.research.ibm.com/artificial-intelligence/#publications)
 - [Stanford AI Lab](https://ai.stanford.edu)
 - [MIT AI Lab](https://www.csail.mit.edu)
